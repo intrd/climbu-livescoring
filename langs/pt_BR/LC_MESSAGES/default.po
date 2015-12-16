@@ -1,0 +1,115 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: climbu-livescoring\n"
+"POT-Creation-Date: 2015-12-16 13:39-0300\n"
+"PO-Revision-Date: 2015-12-16 13:39-0300\n"
+"Last-Translator: intrd <x@dann.com.br>\n"
+"Language-Team: intrd <x@dann.com.br>\n"
+"Language: pt_BR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.4\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: ../../..\n"
+
+#: ../../../www/attempt.php:57 ../../../www/ajax_rank.php:26
+msgid "male"
+msgstr "masculino"
+
+#: ../../../www/attempt.php:58 ../../../www/ajax_rank.php:27
+msgid "female"
+msgstr "feminino"
+
+#: ../../../www/attempt.php:67
+msgid "Athlete"
+msgstr "Atleta"
+
+#: ../../../www/attempt.php:68
+msgid "Attempt"
+msgstr "Tentativa"
+
+#: ../../../www/score.php:32
+msgid "Loading..."
+msgstr "Carregando..."
+
+#: ../../../www/score.php:49
+msgid ""
+"<small><b>Tip</b>: Use ctrl+mouseroll to adjust on your display.</small>"
+msgstr ""
+"<small><b>Dica</b>: Use ctrl+mouseroll para ajusar em seu display.</small>"
+
+#: ../../../www/ajax_login.php:90
+msgid "Well done!</strong> user logged. "
+msgstr "Pronto!</strong> usuário logado. "
+
+#: ../../../www/login.php:33
+msgid "Username"
+msgstr "Nome de usuário"
+
+#: ../../../www/login.php:37
+msgid "Password"
+msgstr "Senha"
+
+#: ../../../www/login.php:46
+msgid "Close"
+msgstr "Fechar"
+
+#: ../../../www/navbar.php:71
+msgid "About ClimbU"
+msgstr "Sobre ClimbU"
+
+#: ../../../www/navbar.php:81
+msgid "register"
+msgstr "registrar"
+
+#: ../../../www/navbar.php:84
+msgid "score"
+msgstr "placar"
+
+#: ../../../www/navbar.php:90
+msgid "Attempts"
+msgstr "Tentativas"
+
+#: ../../../www/logout.php:31
+msgid "Do you really want to exit?"
+msgstr "Deseja realmente sair?"
+
+#: ../../../www/ajax_attempt.php:37
+msgid "<b>Error</b>: Problem, register again!"
+msgstr "<b>Erro</b>: tente registrar novamente!"
+
+#: ../../../www/ajax_attempt.php:55
+msgid "<b>Error</b>: processing your request, duplicated."
+msgstr "<b>Erro</b>: registro duplicado..."
+
+#: ../../../www/ajax_attempt.php:62
+msgid "<b>Error</b>: this athlete already registered this ascent!"
+msgstr "<b>Erro</b>: este atleta já escalou esse boulder."
+
+#: ../../../www/ajax_attempt.php:67
+msgid "<b>Error</b>: this athlete already flashed this boulder!"
+msgstr "<b>Erro</b>: este atleta já escalou este boulder em Flash.."
+
+#: ../../../www/ajax_attempt.php:89
+msgid ""
+"<b>Error</b>: processing your request, check your post data and try again or "
+"contact our support."
+msgstr "<b>Erro</b>: nos dados de seu registro, contate o suporte..."
+
+#: ../../../www/ajax_attempt.php:95
+msgid "<b>Done</b>: registered! :)"
+msgstr "Registrado :)"
+
+#~ msgid "Fechar"
+#~ msgstr "Fechar"
+
+#~ msgid "ranking"
+#~ msgstr "placar"
+
+#~ msgid "Testing"
+#~ msgstr "Testando.."
+
+#~ msgid "Testing 123"
+#~ msgstr "Testando 123"

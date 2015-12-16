@@ -1,0 +1,127 @@
+/**
+ * ClimbU - Dynamic and open source live scoring for competitions
+ * 
+* @package climbu-livescoring
+* @version 2.0
+* @category system
+* @author intrd - http://dann.com.br/
+* @copyright 2015 intrd
+* license: Creative Commons Attribution-ShareAlike 4.0 International License - http://creativecommons.org/licenses/by-sa/4.0/
+* @link https://github.com/intrd/climbu-livescoring/
+* Dependencies: 
+*   https://github.com/intrd/php-adminer/
+*   https://github.com/intrd/php-common/
+*   https://github.com/intrd/sqlite-dbintrd/
+*   https://github.com/intrd/php-mcrypt256CBC/
+*/
+
+/*
+ * Base structure 
+ */
+
+/* Move down content because we have a fixed navbar that is 50px tall */
+
+body
+{
+    padding-top: 0px;
+}
+
+/*
+ * Global add-ons
+ */
+
+.sub-header
+{
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+/*
+ * Sidebar
+ */
+
+/* Hide for mobile, show later */
+
+/*
+ * Main content
+ */
+
+.main
+{
+    padding: 20px;
+}
+
+@media (min-width: 768px)
+{
+    .main
+    {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+.main .page-header
+{
+    margin-top: 0;
+}
+
+/*
+ * Placeholder dashboard ideas
+ */
+
+.placeholders
+{
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.placeholders h4
+{
+    margin-bottom: 0;
+}
+
+.placeholder
+{
+    margin-bottom: 20px;
+}
+
+.placeholder img
+{
+    border-radius: 50%;
+}
+
+.logo
+{
+}
+
+.carts_off
+{
+    color: #c52e2e;
+}
+
+.carts_on
+{
+    color: #01419d;
+}
+
+.service_header
+{
+    width: 250px;
+
+}
+
+@media (max-width: 320px)
+{
+    .orders_table
+    {
+        font-size: 12px;
+    }
+}
+
+.nav_spent
+{
+    margin-top:1px;
+}
+
+
+
