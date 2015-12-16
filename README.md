@@ -50,4 +50,3 @@ screen //to attach current screen
 ./admin_db.sh & //to open webserver for database adminitration
 
 ```
-```
