@@ -50,6 +50,7 @@ if (isset($_COOKIE["userdata"]) ){
 putenv("LANG=" . $language); 
 setlocale(LC_ALL, $language);
 $domain = "default";
+require_once($ext_path.'php-gettext/gettext.inc');
 bindtextdomain($domain, $root."langs"); 
 bind_textdomain_codeset($domain, 'UTF-8');
 textdomain($domain);
