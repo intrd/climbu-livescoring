@@ -25,8 +25,7 @@ $debug=false; //for sql debugging
 $homehost="192.168.0.100"; //change to local network address
 $viewlog="viewlog.html"; //www logfile
 $admin="intrd"; //admin username
-$score_title="Maratona de boulder CTF (ED. 2016)"; //set your score display title
-$navbar_title="Placar (CT Ferragut)"; //set your navbar display title
+$navbar_title="Maratona de boulder CTF (Individual) 2016"; //set your navbar display title
 if (!defined('ENCRYPTION_KEY')) define('ENCRYPTION_KEY', "13678347678834841483847458183479"); //your privatekey to decrypt user DB passwords
 
 $root=dirname(__FILE__)."/";

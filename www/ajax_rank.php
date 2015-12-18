@@ -45,14 +45,16 @@ if ($cat=="female") $catg = _("female");
                 </thead>                     
                 <tbody style="display: table-row-group;"> 
                     <?php
+                    //echo $start;
                     $score_m=get_rank($cat,$start,$qty);
-                    $pos=0;
+                    $pos=$start;
                     foreach($score_m as $key=>$position){
                         $pos++;
                         if ($pos % 2 == 0) {
-                        	$color="#F0FFF0";
+                        	///$color="#2F4F4F";
+                            $color="#333";
                         }else{
-                        	$color="white";
+                        	$color="black";
                         }
                         
                         echo"

@@ -37,14 +37,12 @@ if (($levels)>=1){
     $hidden_onlogged="style='display:none;'";
 
     $usu=$userdata->username;
-    $attempt_count = new data("attempts","filter:user='$usu' and ascent='0'"); 
+    $attempt_count = new data("attempts","all"); 
     $attempt_count = count((array)$attempt_count);
-    $top_count = new data("attempts","filter:user='$usu' and ascent='1'"); 
-    $top_count = count((array)$top_count);
-    $flash_count = new data("attempts","filter:user='$usu' and ascent='2'"); 
-    $flash_count = count((array)$flash_count);
-    //vd($attempt_count);
-    //die;
+    //$top_count = new data("attempts","filter:user='$usu' and ascent='1'"); 
+    //$top_count = count((array)$top_count);
+    //$flash_count = new data("attempts","filter:user='$usu' and ascent='2'"); 
+    //$flash_count = count((array)$flash_count);
 
 }else{
 }
@@ -83,11 +81,14 @@ if (($levels)>=1){
         <li>
             <a href="#score" data-toggle="tab" data-tab-url="score.php" data-tab-always-refresh="true" style="display: block;"><i class="fa fa-pie-chart"></i> <?php echo _("score"); ?></a>
         </li>
+        <li>
+            <a href="#sectors" data-toggle="tab" data-tab-url="sectors.php" data-tab-always-refresh="true" style="display: block;"><i class="fa fa-tags"></i> <?php echo _("points"); ?></a>
+        </li>
     </ul>
     <ul id="nav3" class="nav navbar-nav navbar-right" >
         <li>
             <a class="nav_spent" <?php echo $hidden; ?> >
-                <?php echo _("Attempts"); ?>/T/F<span id="nav_spent_realtime">: <?php echo $attempt_count."/".$top_count."/".$flash_count;?></span>
+                <?php echo "Total: ".$attempt_count;?></span>
             </a>
         </li>
     </ul>

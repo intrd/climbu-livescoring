@@ -65,10 +65,9 @@ if(!isset($_SESSION["userdata"])) fwrite_a($viewlog,"[".date('Y-m-d h:i:s')."] "
 	text-align:center;
 	display:none;
 	">
-	<img src="imgs/gears.gif">
-	loading...
+		<img src="imgs/gears.gif">
+		loading...
 	</div>
-
 	<div class="main_alert"></div>
 
 	<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -88,10 +87,11 @@ if(!isset($_SESSION["userdata"])) fwrite_a($viewlog,"[".date('Y-m-d h:i:s')."] "
 	</div>
 
 	<!-- Tab pane contents -->         
-	<div class="container-fluid">
+	<div class="container-fluid" id="scorediv" >
 	    <div class="tab-content">
 	        <div class="tab-pane" id="attempt"></div>
-	        <div class="tab-pane active" id="score" ></div>
+	        <div class="tab-pane active" id="score"></div>
+	        <div class="tab-pane" id="sectors"></div>
 	    </div>
 	</div>
 
@@ -116,6 +116,14 @@ if(!isset($_SESSION["userdata"])) fwrite_a($viewlog,"[".date('Y-m-d h:i:s')."] "
         	window.location.replace("./#score");
         });
 
+        $( "#nav1.navbar-nav" ).click(function() {
+        	$('#scorediv').css('color','');
+        	$('#scorediv').css('background-color','');
+        	$('#scorediv').css('margin-top','');
+        });
+
+        
+
         if (location.hash == '') {
         	window.location.replace("./#attempt");
         }
@@ -134,7 +142,7 @@ if(!isset($_SESSION["userdata"])) fwrite_a($viewlog,"[".date('Y-m-d h:i:s')."] "
     </script>
 
     <p style="padding:5px; background-color:#013220; color: #9D9D9D;">
-    	ClimbU - Open source live scoring for competitions by <a href="http://dann.com.br">intrd</a><br>
+    	ClimbU / Open source live scoring for competitions by <a href="http://dann.com.br">intrd</a><br>
     </p>
 
 

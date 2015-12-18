@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: climbu-livescoring\n"
-"POT-Creation-Date: 2015-12-16 13:39-0300\n"
-"PO-Revision-Date: 2015-12-16 13:39-0300\n"
+"POT-Creation-Date: 2015-12-18 12:44-0300\n"
+"PO-Revision-Date: 2015-12-18 12:44-0300\n"
 "Last-Translator: intrd <x@dann.com.br>\n"
 "Language-Team: intrd <x@dann.com.br>\n"
 "Language: pt_BR\n"
@@ -22,25 +22,25 @@ msgstr "masculino"
 msgid "female"
 msgstr "feminino"
 
-#: ../../../www/attempt.php:67
+#: ../../../www/attempt.php:67 ../../../www/ajax_boulder.php:77
 msgid "Athlete"
 msgstr "Atleta"
 
 #: ../../../www/attempt.php:68
-msgid "Attempt"
-msgstr "Tentativa"
+msgid "Choose"
+msgstr "Escolha"
 
-#: ../../../www/score.php:32
+#: ../../../www/score.php:34
 msgid "Loading..."
 msgstr "Carregando..."
 
-#: ../../../www/score.php:49
+#: ../../../www/score.php:61
 msgid ""
 "<small><b>Tip</b>: Use ctrl+mouseroll to adjust on your display.</small>"
 msgstr ""
 "<small><b>Dica</b>: Use ctrl+mouseroll para ajusar em seu display.</small>"
 
-#: ../../../www/ajax_login.php:90
+#: ../../../www/ajax_login.php:86
 msgid "Well done!</strong> user logged. "
 msgstr "Pronto!</strong> usuário logado. "
 
@@ -56,54 +56,93 @@ msgstr "Senha"
 msgid "Close"
 msgstr "Fechar"
 
-#: ../../../www/navbar.php:71
+#: ../../../www/sectors.php:22
+msgid "Sectors & Points"
+msgstr "Setores & Valores"
+
+#: ../../../www/sectors.php:34
+msgid "Sector"
+msgstr "Setor"
+
+#: ../../../www/navbar.php:69
 msgid "About ClimbU"
 msgstr "Sobre ClimbU"
 
-#: ../../../www/navbar.php:81
+#: ../../../www/navbar.php:79
 msgid "register"
 msgstr "registrar"
 
-#: ../../../www/navbar.php:84
+#: ../../../www/navbar.php:82
 msgid "score"
 msgstr "placar"
 
-#: ../../../www/navbar.php:90
-msgid "Attempts"
-msgstr "Tentativas"
+#: ../../../www/navbar.php:85
+msgid "points"
+msgstr "pontos"
 
 #: ../../../www/logout.php:31
 msgid "Do you really want to exit?"
 msgstr "Deseja realmente sair?"
 
-#: ../../../www/ajax_attempt.php:37
+#: ../../../www/ajax_boulder.php:71
+msgid "Registering top|attempt"
+msgstr "Registrando Top|Tentativa"
+
+#: ../../../www/ajax_boulder.php:71
+msgid "sector"
+msgstr "setor"
+
+#: ../../../www/ajax_boulder.php:76
+msgid "Referee"
+msgstr "Árbitro"
+
+#: ../../../www/ajax_boulder.php:107
+msgid "attempt"
+msgstr "tentativa"
+
+#: ../../../www/ajax_boulder.php:113
+msgid "Date/time"
+msgstr "Data/hora"
+
+#: ../../../www/ajax_boulder.php:121
+msgid "Register"
+msgstr "Registrar"
+
+#: ../../../www/ajax_boulder.php:125
+msgid "Fechar"
+msgstr "Fechar"
+
+#: ../../../www/ajax_attempt.php:41
 msgid "<b>Error</b>: Problem, register again!"
 msgstr "<b>Erro</b>: tente registrar novamente!"
 
-#: ../../../www/ajax_attempt.php:55
+#: ../../../www/ajax_attempt.php:62
 msgid "<b>Error</b>: processing your request, duplicated."
 msgstr "<b>Erro</b>: registro duplicado..."
 
-#: ../../../www/ajax_attempt.php:62
+#: ../../../www/ajax_attempt.php:69
 msgid "<b>Error</b>: this athlete already registered this ascent!"
 msgstr "<b>Erro</b>: este atleta já escalou esse boulder."
 
-#: ../../../www/ajax_attempt.php:67
+#: ../../../www/ajax_attempt.php:74
 msgid "<b>Error</b>: this athlete already flashed this boulder!"
 msgstr "<b>Erro</b>: este atleta já escalou este boulder em Flash.."
 
-#: ../../../www/ajax_attempt.php:89
+#: ../../../www/ajax_attempt.php:96
 msgid ""
 "<b>Error</b>: processing your request, check your post data and try again or "
 "contact our support."
 msgstr "<b>Erro</b>: nos dados de seu registro, contate o suporte..."
 
-#: ../../../www/ajax_attempt.php:95
+#: ../../../www/ajax_attempt.php:102
 msgid "<b>Done</b>: registered! :)"
 msgstr "Registrado :)"
 
-#~ msgid "Fechar"
-#~ msgstr "Fechar"
+#~ msgid "Tentativa"
+#~ msgstr "Tentativa"
+
+#~ msgid "Attempts"
+#~ msgstr "Tentativas"
 
 #~ msgid "ranking"
 #~ msgstr "placar"

@@ -21,12 +21,16 @@ include("secure.php");
 if($levels!=1){
     die("Error: security.");
 }
+//vd($_POST);
+
 
 if (isset($_POST["boulder"])){
 
 	$postdata=$_POST;
 	$postdata["user"]=$userdata->username;
 	$postdata["sector"]=$userdata->sector;
+	//$postdata["ascent"]=$postdata["top"];
+
 	//$postdata["datetime"]=date('Y-m-d h:i:s');
 
 	//if ($client!=$postdata["user"]){
@@ -46,6 +50,9 @@ if (isset($_POST["boulder"])){
 	foreach ($postdata as $key=>$value){
 		$attempt->$key=$value;
 	}
+
+	//vd($attempt);
+	//die;
 
 	$checkdup_target_object=$attempt->target_object;
 	$checkdup_datetime=$attempt->datetime;

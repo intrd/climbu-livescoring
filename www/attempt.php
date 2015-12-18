@@ -57,7 +57,7 @@ if (isset($_SESSION["userdata"])){
             if ($cat=="male") $cat = _("male");
             if ($cat=="female") $cat = _("female");
         ?>
-         <a href="#" class="list-group-item" data-toggle="collapse" data-target="#<?php echo $category->name;?>" data-parent="#menu"><i class="<?php echo $category->icon;?>"></i><?php echo ucfirst($cat);?><span class="label label-info pull-right"><?php echo count((array)$athlets_list);?></span></a>
+         <a href="#" class="list-group-item" data-toggle="collapse" data-target="#<?php echo $category->name;?>" data-parent="#menu"><i class="<?php echo $category->icon;?>"></i>&nbsp;&nbsp;&nbsp;<?php echo ucfirst($cat);?><span class="label label-info pull-right"><?php echo count((array)$athlets_list);?></span></a>
          <div id="<?php echo $category->name;?>" class="sublinks collapse">
              <div class="list-group-item small">
                 <table class="table"> 
@@ -65,8 +65,7 @@ if (isset($_SESSION["userdata"])){
                         <tr style="display: table-row;"> 
                             <th>#</th>  
                             <th><?php echo _("Athlete"); ?></th>     
-                            <th><?php echo _("Attempt"); ?></th>  
-                            <th>Top</th>                                          
+                            <th><?php echo _("Choose"); ?></th>                                         
                         </tr>                     
                     </thead>                 
                     <tbody>
@@ -95,9 +94,7 @@ if (isset($_SESSION["userdata"])){
                                             <td>
                                                 '.$active_icon.'
                                             </td>   
-                                            <td>
-                                                '.$flash_icon.'
-                                            </td>                       
+                                                              
                                         </tr> 
                                     ';
                             }

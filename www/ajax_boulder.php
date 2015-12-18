@@ -68,13 +68,13 @@ $boulderdata=$sectordata["boulders"];
 ?>
 <div class="modal-header">
     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-    <h4 class="modal-title">Registering <span style="color:<?php echo $stylecolor;?>;"><?php echo $topname;?></span> @ sector <?php echo $sector->id; ?></h4>
+    <h4 class="modal-title"><?php echo _("Registering top|attempt"); ?></span> @ <?php echo _("sector"); ?> <?php echo $sector->id; ?></h4>
 </div>
 <div class="modal-body">
 	<form name="neworder" id="neworder">
 		
-		<h5 class="media-heading">Referee: <?php echo $usu->username; ?></h5>
-		<h5 class="media-heading">Athlete: <?php echo ucfirst($athlete->name);?> (#<?php echo ucfirst($athlete->id);?>)</h5>
+		<h5 class="media-heading"><?php echo _("Referee"); ?>: <?php echo $usu->username; ?></h5>
+		<h5 class="media-heading"><?php echo _("Athlete"); ?>: <?php echo ucfirst($athlete->name);?> (#<?php echo ucfirst($athlete->id);?>)</h5>
 
 		<div class="btn-group" style="width:100%;" data-toggle="buttons">
 		  <?php
@@ -103,20 +103,26 @@ $boulderdata=$sectordata["boulders"];
 			} 
 		  ?>
 		</div>
-		Date/time: <?php echo date('d/m/Y h:i:s');?>
+		<div class="checkbox">
+		  <label><input name="ascent" type="radio" value="0"><?php echo _("attempt"); ?></label>
+		</div>
+		<div class="checkbox">
+		  <label><input name="ascent" type="radio" value="1">top</label>
+		</div>
+
+		<?php echo _("Date/time"); ?>: <?php echo date('d/m/Y h:i:s');?>
 
 		<input type="hidden" name="athlete" value="<?php echo $athlete->name; ?>">
-		<input type="hidden" name="ascent" value="<?php echo $top; ?>">
 		<input type="hidden" name="datetime" value="<?php echo date('Y-m-d h:i:s'); ?>">
 		<br>
 		<div class="result"></div>
 		<br>
 		
-		<button type="submit" class="btn btn-primary">Register</button>
+		<button type="submit" class="btn btn-primary"><?php echo _("Register"); ?></button>
 	</form>
 </div>
 <div class="modal-footer"> 
-	<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>     
+	<button type="button" class="btn btn-default" data-dismiss="modal"><?php echo _("Fechar"); ?></button>     
 </div>
 
 <script type="text/javascript">

@@ -33,22 +33,18 @@ if (strlen($_POST['password']) < 3){
 
 require_once($ext_path."php-mcrypt256CBC/functions.php");
 
-//$db=db_start();
-//$result=db_query($db,"SELECT * FROM users WHERE email='".$_POST["email"]."'");
-//$results=db_fetch_array($result);
-//$db=db_stop($db);
 $client=$_POST["username"];
 $user = new data("users","filter:username|".$_POST["username"]); 
-//vd($user);
-//die;
 if(count((array)$user)==1){
-  $user = reset($user); // pra pegar a primeira entry apenas
-  $password=$_POST["username"]."|:|".$_POST["password"];
-  //echo $password;
-  //die;
-  //echo mc_encrypt($password);
-  //die;
-  $upassword=mc_decrypt($user->password);
+  $user = reset($user); 
+
+  $password=$_POST["password"];
+  $upassword=$user->password;
+  
+  /* for crypdb */
+  //$password=$_POST["username"]."|:|".$_POST["password"];
+  //$upassword=mc_decrypt($user->password);
+  
   if ($password!=$upassword){
     echo'
       <div class="result alert alert-danger" data-pg-id="159"> 
