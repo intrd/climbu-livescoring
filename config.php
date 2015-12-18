@@ -25,7 +25,7 @@ $debug=false; //for sql debugging
 $homehost="192.168.0.100"; //change to local network address
 $viewlog="viewlog.html"; //www logfile
 $admin="intrd"; //admin username
-$navbar_title="Maratona de boulder CTF (Individual) 2016"; //set your navbar display title
+$navbar_title="Maratona CTF 2016"; //set your navbar display title
 if (!defined('ENCRYPTION_KEY')) define('ENCRYPTION_KEY', "13678347678834841483847458183479"); //your privatekey to decrypt user DB passwords
 
 $root=dirname(__FILE__)."/";
@@ -49,7 +49,7 @@ if (isset($_COOKIE["userdata"]) ){
 putenv("LANG=" . $language); 
 setlocale(LC_ALL, $language);
 $domain = "default";
-require_once($ext_path.'php-gettext/gettext.inc');
+//require_once($ext_path.'php-gettext/gettext.inc');
 bindtextdomain($domain, $root."langs"); 
 bind_textdomain_codeset($domain, 'UTF-8');
 textdomain($domain);
