@@ -20,6 +20,8 @@
 
 * [Portables](https://github.com/intrd/climbu-livescoring/releases) - lastest version of climbu-livescoring portable 
 
+![windows_portable_tree](/shots/windows_portable_tree.png?raw=true "windows_portable_tree")
+
 I've packed a portable version of climbu-lvescoring, easy-to-install, just follow this 5 steps below..
 
 1. Download and install [Visual C++ Redistributable for Visual Studio 2015](http://www.microsoft.com/en-us/download/details.aspx?id=48145)
@@ -29,8 +31,16 @@ I've packed a portable version of climbu-lvescoring, easy-to-install, just follo
 5. To admin, double click at `windows_admin_db.bat` to run and access browsing to `http://192.168.0.100:91/`, than point adminer to `../data/climbu-livescoring.dat`
 
 ## Screenshots
-
+![display_score](/shots/display_score.png?raw=true "display_score")
 ![about](/shots/about.png?raw=true "about")
+![mobile](/shots/mobile.png?raw=true "mobile")
+![register_already](/shots/register_already.png?raw=true "register_already")
+![register_categs](/shots/register_categs.png?raw=true "register_categs")
+![running](/shots/running.png?raw=true "running")
+![running_win](/shots/running_win.png?raw=true "running_win")
+![sectors](/shots/sectors.png?raw=true "sectors")
+![sqliteadmin](/shots/sqliteadmin.png?raw=true "sqliteadmin")
+
 
 ## Development system installation
 ```
