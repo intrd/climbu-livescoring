@@ -36,9 +36,7 @@ I've packed a portable version of climbu-lvescoring, easy-to-install, just follo
 ![sectors](/shots/sectors.png?raw=true "sectors")
 ![sqliteadmin](/shots/sqliteadmin.png?raw=true "sqliteadmin")
 ![mobile](/shots/mobile.jpg?raw=true "mobile")
-![register_already](/shots/register_already.png?raw=true "register_already")
 ![register_categs](/shots/register_catgs.png?raw=true "register_catgs")
-![running](/shots/running.png?raw=true "running")
 
 
 ## Development system installation
@@ -85,6 +83,7 @@ extension=php\ext\php_sqlite3.dll
 # Running on Linux
 ```
 ./run.sh
+![running](/shots/running.png?raw=true "running")
 ..and access http://localhost/ to open web interface (default logon: intrd/meuovo123! )
 
 ./admin_db.sh & 
