@@ -20,7 +20,7 @@
 
 * [Portables](https://github.com/intrd/climbu-livescoring/releases) - lastest version of climbu-livescoring portable 
 
-![windows_portable_tree](/shots/windows_portable_tree.png?raw=true "windows_portable_tree")
+![running_win](/shots/running_win.png?raw=true "running_win")
 
 I've packed a portable version of climbu-lvescoring, easy-to-install, just follow this 5 steps below..
 
@@ -33,13 +33,12 @@ I've packed a portable version of climbu-lvescoring, easy-to-install, just follo
 ## Screenshots
 ![display_score](/shots/display_score.png?raw=true "display_score")
 ![about](/shots/about.png?raw=true "about")
-![mobile](/shots/mobile.png?raw=true "mobile")
 ![register_already](/shots/register_already.png?raw=true "register_already")
-![register_categs](/shots/register_categs.png?raw=true "register_categs")
-![running](/shots/running.png?raw=true "running")
-![running_win](/shots/running_win.png?raw=true "running_win")
+![register_categs](/shots/register_catgs.png?raw=true "register_catgs")
 ![sectors](/shots/sectors.png?raw=true "sectors")
 ![sqliteadmin](/shots/sqliteadmin.png?raw=true "sqliteadmin")
+![mobile](/shots/mobile.jpg?raw=true "mobile")
+![running](/shots/running.png?raw=true "running")
 
 
 ## Development system installation
