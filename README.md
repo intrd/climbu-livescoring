@@ -81,9 +81,9 @@ extension=php\ext\php_sqlite3.dll
 ```
 
 # Running on Linux
+![running](/shots/running.png?raw=true "running")
 ```
 ./run.sh
-![running](/shots/running.png?raw=true "running")
 ..and access http://localhost/ to open web interface (default logon: intrd/meuovo123! )
 
 ./admin_db.sh & 
