@@ -80,6 +80,9 @@ extension=php\ext\php_sqlite3.dll
 ```
 
 # Translating
+
+The default language is en_US, but you can translat to any language u want, just follow my pt_BR translation file sample.
+
 ![pedit](/shots/poedit.jpg?raw=true "poedit")
 
 1. At `langs` directory, clone `pt_BR` to a new directory w/ your language code 
