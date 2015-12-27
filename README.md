@@ -91,7 +91,7 @@ The default language is en_US, but you can translat to any language u want, just
 4. If you want multilanguage users, open `database/users` and set the individual user language. 
 
 
-# Running on Linux
+# Running
 ![running](/shots/running.jpg?raw=true "running")
 ```
 ./run.sh
@@ -100,15 +100,8 @@ The default language is en_US, but you can translat to any language u want, just
 ./admin_db.sh & 
 ..shortcut to run adminer at localhost:91 to manage sqlite3 database (just point ../data/climbu-livescoring.dat)
 
-```
-
-# Running on Windows
-```
-Download lastest PHP non-threaded version and create BATs w/ something like: 
-php\php.exe -c "php\php.ini" -S 0.0.0.0:80 -t climbu-livescoring/www //to run php built-in webserver and open climbu web interface
-php\php.exe -c "php\php.ini" -S 0.0.0.0:91 -t climbu-livescoring/data //to run php built-in webserver and open adminer
-
-..if u have any doubt, just download my windows_x86 [lastest portable](https://github.com/intrd/climbu-livescoring/releases) version and take a look at my BATs.
+Windows machine? 
+just download my windows_x86 [lastest portable](https://github.com/intrd/climbu-livescoring/releases) version and take a look at my BATs
 ```
 
 
