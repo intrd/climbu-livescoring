@@ -38,7 +38,7 @@ I've packed a portable version of climbu-lvescoring, easy-to-install, just follo
 ![sqliteadmin](/shots/sqliteadmin.jpg?raw=true "sqliteadmin")
 
 
-## Development system installation
+## Development system
 ```
 apt-get update & apt-get upgrade
 apt-get install php5-curl php5-sqlite php5-cli php5-mcrypt
