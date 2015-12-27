@@ -82,10 +82,10 @@ extension=php\ext\php_sqlite3.dll
 # Translating
 ![pedit](/shots/poedit.jpg?raw=true "poedit")
 
-1. At `langs` directory, clone pt_BR to a directory w/ your language code 
-2. Open default.po w/ poedit (https://poedit.net/download) and start translating
-3. Open www/config.php file and change $language = "en_US.UTF-8"; to your language.
-4. If you want multilanguage users, open database/users and set the individual user language. 
+1. At `langs` directory, clone `pt_BR` to a new directory w/ your language code 
+2. Open `default.po` w/ poedit (https://poedit.net/download) and start translating
+3. Open `www/config.php` file and change `$language = "en_US.UTF-8";` to your language.
+4. If you want multilanguage users, open `database/users` and set the individual user language. 
 
 
 # Running on Linux
