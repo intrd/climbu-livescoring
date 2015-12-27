@@ -101,8 +101,6 @@ The default language is en_US, but you can translat to any language u want, just
 ..shortcut to run adminer at localhost:91 to manage sqlite3 database (just point ../data/climbu-livescoring.dat)
 
 Windows machine? 
-just download my windows_x86 [lastest portable](https://github.com/intrd/climbu-livescoring/releases) version and take a look at my BATs
+just download my windows_x86 portable: https://github.com/intrd/climbu-livescoring/releases
 ```
-
-
 
