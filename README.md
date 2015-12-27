@@ -38,7 +38,7 @@ I've packed a portable version of climbu-lvescoring, easy-to-install, just follo
 ![sqliteadmin](/shots/sqliteadmin.jpg?raw=true "sqliteadmin")
 
 
-## Development system
+## Setup a development environment
 ```
 apt-get update & apt-get upgrade
 apt-get install php5-curl php5-sqlite php5-cli php5-mcrypt
@@ -78,6 +78,15 @@ extension=php\ext\php_sqlite3.dll
  |_www //core web interface
 
 ```
+
+# Translating
+![pedit](/shots/poedit.jpg?raw=true "poedit")
+
+1. At `langs` directory, clone pt_BR to a directory w/ your language code 
+2. Open default.po w/ poedit (https://poedit.net/download) and start translating
+3. Open www/config.php file and change $language = "en_US.UTF-8"; to your language.
+4. If you want multilanguage users, open database/users and set the individual user language. 
+
 
 # Running on Linux
 ![running](/shots/running.jpg?raw=true "running")
