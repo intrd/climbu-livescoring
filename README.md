@@ -34,9 +34,9 @@ I've packed a portable version of climbu-lvescoring, easy-to-install, just follo
 ![display_score](/shots/display_score.png?raw=true "display_score")
 ![about](/shots/about.png?raw=true "about")
 ![sectors](/shots/sectors.png?raw=true "sectors")
-![sqliteadmin](/shots/sqliteadmin.png?raw=true "sqliteadmin")
 ![mobile](/shots/mobile.jpg?raw=true "mobile")
 ![register_categs](/shots/register_catgs.png?raw=true "register_catgs")
+![sqliteadmin](/shots/sqliteadmin.png?raw=true "sqliteadmin")
 
 
 ## Development system installation
