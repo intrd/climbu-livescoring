@@ -20,7 +20,7 @@
 
 * [Portables](https://github.com/intrd/climbu-livescoring/releases) - lastest version of climbu-livescoring portable 
 
-![running_win](/shots/running_win.png?raw=true "running_win")
+![running_win](/shots/running_win.jpg?raw=true "running_win")
 
 I've packed a portable version of climbu-lvescoring, easy-to-install, just follow this 5 steps below..
 
@@ -31,11 +31,11 @@ I've packed a portable version of climbu-lvescoring, easy-to-install, just follo
 5. To admin, double click at `windows_admin_db.bat` to run and access browsing to `http://192.168.0.100:91/`, than point adminer to `../data/climbu-livescoring.dat`
 
 ## Screenshots
-![display_score](/shots/display_score.png?raw=true "display_score")
-![sectors](/shots/sectors.png?raw=true "sectors")
+![display_score](/shots/display_score.jpg?raw=true "display_score")
+![sectors](/shots/sectors.jpg?raw=true "sectors")
 ![mobile](/shots/mobile.jpg?raw=true "mobile")
-![register_categs](/shots/register_catgs.png?raw=true "register_catgs")
-![sqliteadmin](/shots/sqliteadmin.png?raw=true "sqliteadmin")
+![register_categs](/shots/register_catgs.jpg?raw=true "register_catgs")
+![sqliteadmin](/shots/sqliteadmin.jpg?raw=true "sqliteadmin")
 
 
 ## Development system installation
@@ -80,7 +80,7 @@ extension=php\ext\php_sqlite3.dll
 ```
 
 # Running on Linux
-![running](/shots/running.png?raw=true "running")
+![running](/shots/running.jpg?raw=true "running")
 ```
 ./run.sh
 ..and access http://localhost/ to open web interface (default logon: intrd/meuovo123! )
