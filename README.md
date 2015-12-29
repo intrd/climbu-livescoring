@@ -20,7 +20,7 @@
 
 I've packed a portable version of climbu-lvescoring, easy-to-install, just follow this 5 steps below..
 
-1. Download and install [Visual C++ Redistributable for Visual Studio 2015](http://www.microsoft.com/en-us/download/details.aspx?id=48145)
+1. Download and install `vc_redist.x86.exe` [Visual C++ Redistributable for Visual Studio 2015](http://www.microsoft.com/en-us/download/details.aspx?id=48145)
 2. Download [lastest portable version](https://github.com/intrd/climbu-livescoring/releases) of climbu-livescoring, unzip at `c:\climbu\`
 3. Edit `climbu/climbu-livescoring/config.php` and change `$homehost="192.168.0.100";` to your `LAN IP ADDRESS` (to test on 1st run, change only this variable)
 4. Double click at `windows_run.bat` to run and access browsing to `http://192.168.0.100/` 
