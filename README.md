@@ -23,7 +23,7 @@ I've packed a portable version of climbu-lvescoring, easy-to-install, just follo
 1. Download and install `vc_redist.x86.exe` [Visual C++ Redistributable for Visual Studio 2015](http://www.microsoft.com/en-us/download/details.aspx?id=48145)
 2. Download [lastest portable version](https://github.com/intrd/climbu-livescoring/releases) of climbu-livescoring, unzip at `c:\climbu\`
 3. Edit `climbu/climbu-livescoring/config.php` and change `$homehost="192.168.0.100";` to your `LAN IP ADDRESS` (to test on 1st run, change only this variable)
-4. Double click at `windows_run.bat` to run and access browsing to `http://192.168.0.100/` 
+4. Double click at `windows_run.bat` to run and access browsing to `http://192.168.0.100/`, default login/pw: `intrd/meuovo123!`
 5. To admin, double click at `windows_admin_db.bat` to run and access browsing to `http://192.168.0.100:91/`, than point adminer to `../data/climbu-livescoring.dat`
 
 ## Screenshots
@@ -100,7 +100,7 @@ The default language is en_US, but you can translat to any language u want, just
 ![running](/shots/running.jpg?raw=true "running")
 ```
 ./run.sh
-..and access http://localhost/ to open web interface (default logon: intrd/meuovo123! )
+..and access http://localhost/ to open web interface (default login: intrd/meuovo123!)
 
 ./admin_db.sh & 
 ..shortcut to run adminer at localhost:91 to manage sqlite3 database (just point ../data/climbu-livescoring.dat)
