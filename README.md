@@ -45,6 +45,9 @@ apt-get install php5-curl php5-sqlite php5-cli php5-mcrypt
 
 apt-get install git
 git clone https://github.com/intrd/climbu-livescoring/
+
+# Dependencies.. 
+Stay outside and clone all dependencies below..
 git clone https://github.com/intrd/php-adminer/
 git clone https://github.com/intrd/php-common/
 git clone https://github.com/intrd/sqlite-dbintrd/
@@ -63,19 +66,25 @@ extension=php\ext\php_sqlite3.dll
 ```
 
 ## Directory structure
+Follow this sample structure..
 ```
 |_climbu-livescoring
 |_run.sh //shortcut to run climbu at localhost:80
-|_admin_db.sh //shortcut to run adminer at localhost:91 to manage sqlite3 database (just point ../data/climbu-livescoring.dat)
+|_admin_db.sh //shortcut to run adminer at localhost:91 to manage sqlite3 database (database path ../data/climbu-livescoring.dat)
 |_config.php //config file, take a look and change what u need..
  |_data
   |_climbu-livescoring.dat //sqlite3 climbu database
  |_langs
-  |_pt_BR //to translate.. clone this directory to your language code open .po file w/ poedit and set per-user language at database or change main language at config.php
+  |_pt_BR //clone this directory for translatins, more details below
    |_LC_MESSAGES
     |_default.po //poedit language file
     |_default.mo 
- |_www //core web interface
+ |_www //user web interface
+|_php-adminer //dependency
+|_php-common //dependency
+|_sqlite-dbintrd //dependency
+|_php-mcrypt256CBC //dependency
+
 
 ```
 
