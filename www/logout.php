@@ -34,16 +34,18 @@
 <div class="modal-footer"> 
     <button id="confirm_logout" name="confirm_logout" type="button" class="btn btn-primary" data-dismiss="modal">Yes</button>   
     <button type="button" class="btn btn-default" data-dismiss="modal">No</button>     
+    <div class="result"></div>
 </div>
 <script>
     $( "button#confirm_logout" ).click(function( event ) {
         event.preventDefault();
-		$.post("ajax_logout.php", {"can_logout" : true}, function(data){
-		   if(data.can_logout)
-		      window.location.replace("/#home");
-   	   		  location.reload();
-                window.location.replace("/#home");
-                location.reload();
-		}, "json");
+        $.ajax({
+          type: "POST",
+          url: "ajax_logout.php",
+          success: function(data){
+            $( ".result" ).html( data );
+          }
+        });
+        
     });
 </script>

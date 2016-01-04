@@ -18,10 +18,21 @@
 
 include("secure.php");
 
-$can_logout = $_POST["can_logout"];
+$can_logout = true;
+
 if($can_logout){
 	setcookie ("userdata", "", time() - 3600);
     session_destroy();
-    echo json_encode(array("can_logout" => true));
+
+    echo '<script>window.location.reload(true);</script>';
+    echo'
+      <div class="result alert alert-success" data-pg-id="159"> 
+          <strong data-pg-id="160">THANK YOU!</strong>        
+      </div>
+      <script>
+        window.location.replace("/#home");
+        location.reload();
+      </script>
+    ';
 }
 ?>

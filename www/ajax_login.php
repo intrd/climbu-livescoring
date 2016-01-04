@@ -81,9 +81,11 @@ if (!isset($_SESSION['userdata'])){
 }
 //vd($results);
 
+echo '<script>window.location.reload(true);</script>';
+
 echo'
-  <div class="result alert alert-success" data-pg-id="159"><strong data-pg-id="160"> 
-      '._('Well done!</strong> user logged. ').'       
+  <div class="result alert alert-success" data-pg-id="159"> 
+      <strong data-pg-id="160">Well done!</strong> user logged.        
   </div>
   <script>
     window.location.replace("/#score");
