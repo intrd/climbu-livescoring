@@ -17,11 +17,6 @@
 */
 
 ?>
-<!--
-<link href="bootstrap/css/bootstrap.css" rel="stylesheet">
-<link href="style.css" rel="stylesheet">
-<link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
--->
 <div class="modal-header"> 
     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>     
     <h4 class="modal-title">Logout</h4>

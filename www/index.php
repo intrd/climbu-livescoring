@@ -34,7 +34,7 @@ if(!isset($_SESSION["userdata"])) fwrite_a($viewlog,"[".date('Y-m-d h:i:s')."] "
 	<link href="style.css" rel="stylesheet" type="text/css">
 	<link href="bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css">
 	<link href="assets/css/jquery.loadmask.css" rel="stylesheet" type="text/css">
-	<link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/Font-Awesome-master/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<link rel="icon" type="image/png" href="imgs/favicon.ico" />
 </head>
