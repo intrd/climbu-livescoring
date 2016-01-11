@@ -27,16 +27,24 @@ I've packed a portable version of climbu-lvescoring, easy-to-install, just follo
 5. To admin, double click at `windows_admin_db.bat` to run and access browsing to `http://192.168.0.100:91/`, than point adminer to `../data/climbu-livescoring.dat`
 
 ## Screenshots
+### Score display
+By default cycling 5s/15 athlets, you can easily adjust font size to fit at your monitor using ctrl+mouse roll
 ![display_score](/shots/display_score.jpg?raw=true "display_score")
-Score display (cycling 5s/15 athlets), you can easily adjust font size to fit at your monitor using ctrl+mouse roll
+
+### Sectors & points
 ![sectors](/shots/sectors.jpg?raw=true "sectors")
-Sectors and points table
+
+### Mobile responsive layout
+Lightweight user interface, works on any smartphone/tablet
 ![mobile](/shots/mobile.jpg?raw=true "mobile")
-Mobile responsive layout
+
+### Categories
+Customizable categories to adapt to your own championship format
 ![register_categs](/shots/register_catgs.jpg?raw=true "register_catgs")
-Customizable categories
+
+Database admin
+SQLite admin to raw database access 
 ![sqliteadmin](/shots/sqliteadmin.jpg?raw=true "sqliteadmin")
-SQLite admint to raw administratin database
 
 ## Setup a development environment (Linux)
 ```
