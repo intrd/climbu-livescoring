@@ -99,7 +99,7 @@ Follow this sample structure..
 
 ```
 
-# Translating
+# Translations
 
 The default language is en_US, but you can translat to any language u want, just follow my pt_BR translation file sample.
 
