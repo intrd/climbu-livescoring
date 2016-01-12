@@ -42,7 +42,7 @@ Lightweight user interface, works on any smartphone/tablet
 Customizable categories to adapt to your own championship format
 ![register_categs](/shots/register_catgs.jpg?raw=true "register_catgs")
 
-Database admin
+### Database admin
 SQLite admin to raw database access 
 ![sqliteadmin](/shots/sqliteadmin.jpg?raw=true "sqliteadmin")
 
