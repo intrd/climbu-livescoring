@@ -61,6 +61,9 @@ git clone https://github.com/intrd/php-common/
 git clone https://github.com/intrd/sqlite-dbintrd/
 git clone https://github.com/intrd/php-mcrypt256CBC/
 
+# Locale setup 
+Uncomment a line containing pt_BR.UTF-8 on /etc/locale.gen and then run: sudo locale-gen
+
 ```
 ### Windows environments
 
