@@ -77,7 +77,7 @@ if (($levels)>=1){
         <li>
             <a href="#score" data-toggle="tab" data-tab-url="score.php" data-tab-always-refresh="true" style="display: block;"><i class="fa fa-pie-chart"></i> <?php echo _("score"); ?></a>
         </li>
-        <li>
+        <li <?php echo $hidden; ?>>
             <a href="#tops" data-toggle="tab" data-tab-url="tops.php" data-tab-always-refresh="true" style="display: block;"><i class="fa fa-level-up"></i> <?php echo _("tops"); ?></a>
         </li>
         <li>
