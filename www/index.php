@@ -8,12 +8,8 @@
 * @category system
 * @author intrd - http://dann.com.br/
 * @copyright 2015 intrd
-* @license Creative Commons Attribution-ShareAlike 4.0 International License - http://creativecommons.org/licenses/by-sa/4.0/
-* Dependencies: 
-* 	https://github.com/intrd/php-adminer/
-* 	https://github.com/intrd/php-common/
-* 	https://github.com/intrd/sqlite-dbintrd/
-* 	https://github.com/intrd/php-mcrypt256CBC/
+* @license Creative Commons Attribution-ShareAlike 4.0 - http://creativecommons.org/licenses/by-sa/4.0/
+* Dependencies: Yes, details at README.md
 */
 
 include("../config.php");
@@ -92,6 +88,7 @@ if(!isset($_SESSION["userdata"])) fwrite_a($viewlog,"[".date('Y-m-d h:i:s')."] "
 	        <div class="tab-pane" id="attempt"></div>
 	        <div class="tab-pane active" id="score"></div>
 	        <div class="tab-pane" id="sectors"></div>
+	        <div class="tab-pane" id="tops"></div>
 	    </div>
 	</div>
 

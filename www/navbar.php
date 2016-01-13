@@ -8,12 +8,8 @@
 * @category system
 * @author intrd - http://dann.com.br/
 * @copyright 2015 intrd
-* @license Creative Commons Attribution-ShareAlike 4.0 International License - http://creativecommons.org/licenses/by-sa/4.0/
-* Dependencies: 
-*   https://github.com/intrd/php-adminer/
-*   https://github.com/intrd/php-common/
-*   https://github.com/intrd/sqlite-dbintrd/
-*   https://github.com/intrd/php-mcrypt256CBC/
+* @license Creative Commons Attribution-ShareAlike 4.0 - http://creativecommons.org/licenses/by-sa/4.0/
+* Dependencies: Yes, details at README.md
 */
 
 require_once("../config.php");
@@ -82,14 +78,16 @@ if (($levels)>=1){
             <a href="#score" data-toggle="tab" data-tab-url="score.php" data-tab-always-refresh="true" style="display: block;"><i class="fa fa-pie-chart"></i> <?php echo _("score"); ?></a>
         </li>
         <li>
+            <a href="#tops" data-toggle="tab" data-tab-url="tops.php" data-tab-always-refresh="true" style="display: block;"><i class="fa fa-level-up"></i> <?php echo _("tops"); ?></a>
+        </li>
+        <li>
             <a href="#sectors" data-toggle="tab" data-tab-url="sectors.php" data-tab-always-refresh="true" style="display: block;"><i class="fa fa-tags"></i> <?php echo _("points"); ?></a>
         </li>
+        
     </ul>
     <ul id="nav3" class="nav navbar-nav navbar-right" >
         <li>
-            <a class="nav_spent" <?php echo $hidden; ?> >
-                <?php echo "Total: ".$attempt_count;?></span>
-            </a>
+            
         </li>
     </ul>
 </div>
