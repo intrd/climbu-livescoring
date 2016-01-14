@@ -38,6 +38,10 @@ By default cycling 5s/15 athlets, you can easily adjust font size to fit at your
 Lightweight user interface, works on any smartphone/tablet
 ![mobile](/shots/mobile.jpg?raw=true "mobile")
 
+### Tops 
+List all tops registered by logged referee
+![sectors](/shots/tops.jpg?raw=true "tops")
+
 ### Categories
 Customizable categories to adapt to your own championship format
 ![register_categs](/shots/register_catgs.jpg?raw=true "register_catgs")
