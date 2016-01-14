@@ -103,12 +103,8 @@ if (isset($_POST["boulder"])){
 
 	echo'
 	<script>
-	  setInterval(function(){ 
-	  	window.location.replace("/#attempt");
-	  	location.reload();
-	  }, 1000);
-	  
-	  
+		window.location.replace("/#attempt");
+		location.reload();
 	</script>
 	';
 }

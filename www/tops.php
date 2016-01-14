@@ -14,13 +14,13 @@
 
 include("../config.php");
 ?>
-       
-
-        
-
         <?php 
             $sec=$userdata->sector;
             $tops = new data("attempts","filter:sector='$sec' and (ascent='1' or ascent='2')"); 
+            $boulders=get_sectordata($sec);
+            $boulders=$boulders["boulders"];
+            //vd($boulders);
+            //die;
             ?>
             <div style="margin-top:10px;">
                 <center><h3 class="media-heading"><?php echo _("Sector")." ".$sec; ?></h3></center>
@@ -29,17 +29,27 @@ include("../config.php");
                         <table class="table table-bordered">
                           <th><?php echo _("Athlete"); ?></th>
                           <th><?php echo _("Boulder"); ?></th>
-                          <th><?php echo _("Ascent"); ?></th>
+                          <th><?php echo _("Top or Flash"); ?></th>
                           <th><?php echo _("Referee"); ?></th>
-                        <?php foreach ($tops as $top){ 
-                            if ($top->ascent==1) { $asc="Top"; } 
-                            if ($top->ascent==2) { $asc="Flash"; } 
+                          <th><?php echo _("Value"); ?></th>
+                        <?php
+                          if(isset($col)) unset($col); 
+                          foreach ($tops as $top){
+                            //echo $top->boulder;
+                            $boulder=$boulders[($top->boulder-1)];
+                            //vd($boulder);
+                            $col=$boulder["color"];
+                            //$val=
+                            //vd($col);
+                            if ($top->ascent==1) { $asc="Top"; $val=$boulder["value_top"]; } 
+                            if ($top->ascent==2) { $asc="Flash"; $val=$boulder["value_flash"]; } 
                           ?>
                           <tr>
                             <td><?php echo $top->athlete; ?></td>
-                            <td><?php echo strtoupper($top->boulder_letter); ?></td>
+                            <td style='background-color: <?php echo $col;?>'><?php echo strtoupper($top->boulder_letter); ?></td>
                             <td><?php echo $asc; ?></td>
                             <td><?php echo $top->user; ?></td>
+                            <td>+<?php echo $val; ?></td>
                           </tr>
                         <?php } ?>
                         </table>
