@@ -16,7 +16,8 @@
 * 	https://github.com/intrd/php-mcrypt256CBC/
 */
 
-include_once("../config.php");
-
-include_once($ext_path."php-adminer/adminer.php"); //calling adminer
+if ($_SERVER['REMOTE_ADDR']=="192.168.0.103"){ //whitelist
+	include_once("../config.php");
+	include_once($ext_path."php-adminer/adminer.php"); //calling adminer
+}
 ?>
