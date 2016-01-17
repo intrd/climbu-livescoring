@@ -128,7 +128,7 @@ Windows machine?
 just download my windows_x86 portable: https://github.com/intrd/climbu-livescoring/releases
 ```
 
-### Climbu Livescoring IRL 
+# Climbu Livescoring IRL 
 CTF Bouldering marathon 2016 (Vinhedo, São Paulo/Brazil)
 
 Display and crowd..
