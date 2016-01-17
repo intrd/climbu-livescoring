@@ -131,7 +131,7 @@ just download my windows_x86 portable: https://github.com/intrd/climbu-livescori
 # Climbu Livescoring IRL 
 CTF Bouldering marathon 2016 (Vinhedo, São Paulo/Brazil)
 
-Display and crowd..
+Display
 ![ct](/shots/ct.jpg?raw=true "ct")
 
 Podium
