@@ -29,7 +29,7 @@ I've packed a portable version of climbu-lvescoring, easy-to-install, just follo
 ## Screenshots
 ### Score display
 Rotating score, you can easily adjust font size to fit at your monitor using ctrl+mouse roll
-![display_score](/shots/rankreal.jpg?raw=true "display_score")
+![display_score](/shots/display_score.jpg?raw=true "display_score")
 
 ### Sectors & points
 ![sectors](/shots/sectors.jpg?raw=true "sectors")
@@ -131,11 +131,11 @@ just download my windows_x86 portable: https://github.com/intrd/climbu-livescori
 ### Climbu Livescoring IRL 
 CTF Bouldering marathon 2016 (Vinhedo, São Paulo/Brazil)
 
-Full score
+- Full score
 ![rankreal](/shots/rankreal.jpg?raw=true "rankreal")
 
-Display and crowd..
+- Display and crowd..
 ![ct](/shots/ct.jpg?raw=true "ct")
 
-Podium
+- Podium
 ![ct](/shots/end.jpg?raw=true "end")
