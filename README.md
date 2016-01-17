@@ -28,15 +28,15 @@ I've packed a portable version of climbu-lvescoring, easy-to-install, just follo
 
 ## Screenshots
 ### Score display
-By default cycling 5s/15 athlets, you can easily adjust font size to fit at your monitor using ctrl+mouse roll
-![display_score](/shots/display_score.jpg?raw=true "display_score")
+Rotating score, you can easily adjust font size to fit at your monitor using ctrl+mouse roll
+![display_score](/shots/rankreal.jpg?raw=true "display_score")
 
 ### Sectors & points
 ![sectors](/shots/sectors.jpg?raw=true "sectors")
 
 ### Mobile responsive layout
 Lightweight user interface, works on any smartphone/tablet
-![mobile](/shots/mobile.jpg?raw=true "mobile")
+![smart](/shots/smart.jpg?raw=true "smart")
 
 ### Tops 
 List all tops registered by logged referee
@@ -128,3 +128,14 @@ Windows machine?
 just download my windows_x86 portable: https://github.com/intrd/climbu-livescoring/releases
 ```
 
+### Climbu Livescoring IRL 
+CTF Bouldering marathon 2016 (Vinhedo, São Paulo/Brazil)
+
+Full score
+![rankreal](/shots/rankreal.jpg?raw=true "rankreal")
+
+Display and crowd..
+![ct](/shots/ct.jpg?raw=true "ct")
+
+Podium
+![ct](/shots/end.jpg?raw=true "end")
