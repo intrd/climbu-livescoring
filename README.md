@@ -12,6 +12,22 @@
 * Dependencies: Yes, details at README.md
 */
 ```
+
+The ClimbU Livescoring is a multiplatform application that allows anyone to manage and display real-time scores of a competition. Easily customizable for any competition format(climbing or not).
+
+Extremely lightweight and designed to run with the least amount of hardware:
+- A WiFi network
+- A common PC (windows or linux)
+- One or more smartphones (any configuration) to the referees, the application runs on browser
+- A display or a TV w/ hdmi
+
+On a advanced/minimal setup you just need an Rasberry Pi B+ and a TV :)
+
+Creative Commons Attribution-ShareAlike 4.0 - http://creativecommons.org/licenses/by-sa/4.0/
+- Share — copy and redistribute the material in any medium or format
+- Adapt — remix, transform, and build upon the material
+for any purpose, even commercially. 
+
 ## Downloads
 
 * [Portables](https://github.com/intrd/climbu-livescoring/releases) - lastest version of climbu-livescoring portable 
