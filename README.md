@@ -23,15 +23,6 @@ Extremely lightweight and designed to run with the least amount of hardware:
 
 On a advanced/minimal setup you just need an ***Rasberry Pi B+*** and a TV :)
 
-```
-Creative Commons Attribution-ShareAlike 4.0 - http://creativecommons.org/licenses/by-sa/4.0/
-- Share — copy and redistribute the material in any medium or format
-- Adapt — remix, transform, and build upon the material
-for any purpose, even commercially. 
-
-If you fork, please linkme and respect this license. 
-```
-
 ## Downloads
 
 * [Portables](https://github.com/intrd/climbu-livescoring/releases) - lastest version of climbu-livescoring portable 
@@ -161,3 +152,13 @@ Podium
 Ending score
 
 ![rankreal](/shots/rankreal.jpg?raw=true "rankreal")
+
+
+```
+If you fork it, please linkme and respect the license. 
+
+Creative Commons Attribution-ShareAlike 4.0 - http://creativecommons.org/licenses/by-sa/4.0/
+- Share — copy and redistribute the material in any medium or format
+- Adapt — remix, transform, and build upon the material
+for any purpose, even commercially. 
+```
