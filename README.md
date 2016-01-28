@@ -21,12 +21,16 @@ Extremely lightweight and designed to run with the least amount of hardware:
 - One or more smartphones (any configuration) to the referees, the application runs on browser
 - A display or a TV w/ hdmi
 
-On a advanced/minimal setup you just need an Rasberry Pi B+ and a TV :)
+On a advanced/minimal setup you just need an ***Rasberry Pi B+*** and a TV :)
 
+```
 Creative Commons Attribution-ShareAlike 4.0 - http://creativecommons.org/licenses/by-sa/4.0/
 - Share — copy and redistribute the material in any medium or format
 - Adapt — remix, transform, and build upon the material
 for any purpose, even commercially. 
+
+If you fork, please linkme and respect this license. 
+```
 
 ## Downloads
 
