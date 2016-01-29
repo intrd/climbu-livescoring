@@ -61,7 +61,22 @@ Customizable categories to adapt to your own championship format
 SQLite admin to raw database access 
 ![sqliteadmin](/shots/sqliteadmin.jpg?raw=true "sqliteadmin")
 
-## Setup a development environment (Linux)
+
+# Climbu Livescoring IRL 
+CTF Bouldering marathon 2016 (Vinhedo, São Paulo/Brazil)
+![ct](/shots/ct.jpg?raw=true "ct")
+
+Working display
+![ct](/shots/end2.jpg?raw=true "ct")
+
+Podium
+![ct](/shots/end.jpg?raw=true "end")
+
+Ending score
+
+![rankreal](/shots/rankreal.jpg?raw=true "rankreal")
+
+## Setup a advanced development environment (Linux)
 ```
 apt-get update & apt-get upgrade
 apt-get install php5-curl php5-sqlite php5-cli php5-mcrypt
@@ -139,24 +154,9 @@ Windows machine?
 just download my windows_x86 portable: https://github.com/intrd/climbu-livescoring/releases
 ```
 
-# Climbu Livescoring IRL 
-CTF Bouldering marathon 2016 (Vinhedo, São Paulo/Brazil)
-![ct](/shots/ct.jpg?raw=true "ct")
-
-Working display
-![ct](/shots/end2.jpg?raw=true "ct")
-
-Podium
-![ct](/shots/end.jpg?raw=true "end")
-
-Ending score
-
-![rankreal](/shots/rankreal.jpg?raw=true "rankreal")
-
+If you fork it, please linkme and respect the license.
 
 ```
-If you fork it, please linkme and respect the license. 
-
 Creative Commons Attribution-ShareAlike 4.0 - http://creativecommons.org/licenses/by-sa/4.0/
 - Share — copy and redistribute the material in any medium or format
 - Adapt — remix, transform, and build upon the material
