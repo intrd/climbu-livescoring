@@ -13,10 +13,11 @@
 */
 
 include("../config.php");
+$qtdy=$_REQUEST["qty"];
 ?>
         <?php 
             $sec=$userdata->sector;
-            $tops = new data("attempts","filter:(ascent='1' or ascent='2')"); 
+            $tops = new data("attempts","filter:(ascent='1' or ascent='2') ORDER BY id DESC limit $qtdy;"); 
             $boulders=get_sectordata($sec);
             $boulders=$boulders["boulders"];
             //vd($boulders);

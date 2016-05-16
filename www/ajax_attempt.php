@@ -50,7 +50,7 @@ if (isset($_POST["boulder"])){
 	//vd($attempt);
 	//die;
 
-	$checkdup_target_object=$attempt->target_object;
+	//$checkdup_target_object=$attempt->target_object;
 	$checkdup_datetime=$attempt->datetime;
 	$checkdup_athlete=$attempt->athlete;
 	$checkdup_sector=$attempt->sector;

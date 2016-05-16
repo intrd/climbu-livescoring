@@ -58,11 +58,11 @@ include("../config.php");
                         if (c_attempts><?php echo $athletes_count;?>){
                             c_attempts=0;
                         }
-                        $.get( "score_tops.php", { cat: 'all', start: c_attempts, qty: '20' } )
+                        $.get( "score_tops.php", { cat: 'all', start: c_attempts, qty: '12' } )
                             .done(function( data ) {
                                 $( "#orderlist_attempts" ).html( data );
                         });
-                        c_attempts = c_attempts + 20;            
+                        //c_attempts = c_attempts + 20;            
                     }, 5000);
                 </script>  
             </div>
