@@ -32,8 +32,8 @@ if ($cat=="female") $catg = _("female");
                 <thead> 
                     <tr> 
                         <th>#</th>   
-                        <th><?php echo ucfirst($catg); ?></th>   
-                        <th><?php echo ucfirst($catg); ?>Catg</th>                       
+                        <th></th>   
+                        <th>Catg</th>                       
                         <th>Tops</th>                             
                         <th>Flashs</th>
                         <th>Σ Flashs</th>   
