@@ -18,10 +18,10 @@ session_set_cookie_params(172800);
 //change this variables..
 date_default_timezone_set('America/Sao_Paulo'); //set your timezone
 $debug=false; //for sql debugging
-$homehost="192.168.0.100"; //change to local network address
+$homehost="192.168.0.105"; //change to local network address
 $viewlog="viewlog.html"; //www logfile
 $admin="intrd"; //admin username
-$navbar_title="Maratona CTF 2016"; //set your navbar display title
+$navbar_title="VI Campeonado Caipira"; //set your navbar display title
 if (!defined('ENCRYPTION_KEY')) define('ENCRYPTION_KEY', "13678347678834841483847458183479"); //your privatekey to decrypt user DB passwords
 
 $root=dirname(__FILE__)."/";
@@ -39,7 +39,7 @@ $cookie=$tmp_path."cookie_climbu";
 $language = "en_US.UTF-8";
 if (isset($_COOKIE["userdata"]) ){
 	require_once($ext_path."php-mcrypt256CBC/functions.php");
-	$userdata = json_decode(mc_decrypt($_COOKIE["userdata"]));
+	$userdata = json_decode(mc_decrypt($_COOKIE["userdata"], ENCRYPTION_KEY));
 	if (isset($userdata->language)) $language = $userdata->language;
 }
 putenv("LANG=" . $language); 

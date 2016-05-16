@@ -45,10 +45,16 @@ function get_boulder($sectorid,$bouldernumber){
 function get_rank($category,$start=false,$qty=false){
 	//$athletes = new data("athletes","filter:category='$category' and active='1'",false);
 	//SELECT * FROM ".DBIntrd::$table." WHERE ".$filter
-	$athletes = new data("athletes","custom:
-		SELECT athletes.name,athletes.id,athletes.category FROM athletes WHERE active=1 and category='$category'
-		",false);
-	
+	if($category=="all"){
+		$athletes = new data("athletes","custom:
+			SELECT athletes.name,athletes.id,athletes.category,athletes.gender FROM athletes WHERE active=1
+			",false);
+	}else{
+		$athletes = new data("athletes","custom:
+			SELECT athletes.name,athletes.id,athletes.category,athletes.gender FROM athletes WHERE active=1 and category='$category'
+			",false);
+	}
+
 	$total=count((array)$athletes);
 	if ($start>$total) $start = 0;
 	//echo $start;
@@ -62,11 +68,14 @@ function get_rank($category,$start=false,$qty=false){
 			",false);*/
 
 	foreach($athletes as $key=>$athlete){
+		//vd($athlete);
+		//die;
 		$athlete_name=$athlete->name;
 		$athlete_id=$athlete->id;
 		$athlete_cat=$athlete->category;
 		$score[$athlete_name]["id"]=$athlete_id;
 		$score[$athlete_name]["category"]=$athlete_cat;
+		$score[$athlete_name]["gender"]=$athlete->gender;
 		//vd($athelete_name);
 		//die;
 		$attempts = new data("attempts","filter:athlete='$athlete_name' and ascent=0",false);

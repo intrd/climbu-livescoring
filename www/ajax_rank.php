@@ -32,7 +32,8 @@ if ($cat=="female") $catg = _("female");
                 <thead> 
                     <tr> 
                         <th>#</th>   
-                        <th><?php echo ucfirst($catg); ?></th>                          
+                        <th><?php echo ucfirst($catg); ?></th>   
+                        <th><?php echo ucfirst($catg); ?>Catg</th>                       
                         <th>Tops</th>                             
                         <th>Flashs</th>
                         <th>Σ Flashs</th>   
@@ -43,6 +44,8 @@ if ($cat=="female") $catg = _("female");
                     <?php
                     //echo $start;
                     $score_m=get_rank($cat,$start,$qty);
+                    //vd($score_m);
+                    //die;
                     $pos=$start;
                     foreach($score_m as $key=>$position){
                         $pos++;
@@ -52,11 +55,13 @@ if ($cat=="female") $catg = _("female");
                         }else{
                         	$color="black";
                         }
-                        
+                        $color_gender="blue";
+                        if($position["gender"]=="female") $color_gender="red"; 
                         echo"
                         <tr style='background-color: $color;'> 
                             <td style=\"padding:1px;\">".$pos."</td>
-                            <td style=\"padding:1px;\">".$key."</td>
+                            <td style=\"padding:1px;\">".$key."(<span style='color:$color_gender;'>".ucfirst($position["gender"][0])."</span>)</td>
+                            <td style=\"padding:1px;\">".ucfirst($position["category"])."</td>
                             <td style=\"padding:1px;\">".$position["tops"]."</td>
                             <td style=\"padding:1px;\">".$position["flashs"]."</td>
                             <td style=\"padding:1px;\">".$position["flashs_sum"]."</td>

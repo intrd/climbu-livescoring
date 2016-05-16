@@ -100,10 +100,10 @@ $boulderdata=$sectordata["boulders"];
 		  ?>
 		</div>
 		<div class="checkbox">
-		  <label><input name="ascent" type="radio" value="0"><?php echo _("attempt"); ?></label>
+		  <label><input name="ascent" type="radio" value="0"><?php echo ucfirst(_("attempt")); ?></label>
 		</div>
 		<div class="checkbox">
-		  <label><input name="ascent" type="radio" value="1">top</label>
+		  <label><input name="ascent" type="radio" value="1">Top</label>
 		</div>
 
 		<?php echo _("Date/time"); ?>: <?php echo date('d/m/Y h:i:s');?>

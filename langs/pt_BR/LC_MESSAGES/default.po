@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: climbu-livescoring\n"
-"POT-Creation-Date: 2016-01-14 15:44-0300\n"
-"PO-Revision-Date: 2016-01-14 15:44-0300\n"
+"POT-Creation-Date: 2016-05-15 21:18-0300\n"
+"PO-Revision-Date: 2016-05-15 21:19-0300\n"
 "Last-Translator: intrd <x@dann.com.br>\n"
 "Language-Team: intrd <x@dann.com.br>\n"
 "Language: pt_BR\n"
@@ -14,32 +14,53 @@ msgstr ""
 "X-Poedit-Basepath: .\n"
 "X-Poedit-SearchPath-0: ../../..\n"
 
-#: ../../../www/attempt.php:53 ../../../www/ajax_rank.php:22
+#: ../../../www/attempt.php:59 ../../../www/ajax_rank.php:22
 msgid "male"
 msgstr "masculino"
 
-#: ../../../www/attempt.php:54 ../../../www/ajax_rank.php:23
+#: ../../../www/attempt.php:60 ../../../www/ajax_rank.php:23
 msgid "female"
 msgstr "feminino"
 
-#: ../../../www/attempt.php:63 ../../../www/tops.php:30
-#: ../../../www/ajax_boulder.php:73
+#: ../../../www/attempt.php:69 ../../../www/score_tops.php:30
+#: ../../../www/tops.php:30 ../../../www/ajax_boulder.php:73
 msgid "Athlete"
 msgstr "Atleta"
 
-#: ../../../www/attempt.php:64
+#: ../../../www/attempt.php:70
 msgid "Choose"
 msgstr "Escolha"
 
-#: ../../../www/score.php:30
+#: ../../../www/score.php:27 ../../../www/score.php:54
+#: ../../../www/score_gender.php:30
 msgid "Loading..."
 msgstr "Carregando..."
 
-#: ../../../www/score.php:57
-msgid ""
-"<small><b>Tip</b>: Use ctrl+mouseroll to adjust on your display.</small>"
-msgstr ""
-"<small><b>Dica</b>: Use ctrl+mouseroll para ajusar em seu display.</small>"
+#: ../../../www/score_tops.php:26
+msgid "Lastest tops"
+msgstr "Últimos tops"
+
+#: ../../../www/score_tops.php:31 ../../../www/tops.php:31
+msgid "Boulder"
+msgstr "Boulder"
+
+#: ../../../www/score_tops.php:32 ../../../www/sectors.php:30
+#: ../../../www/tops.php:26
+msgid "Sector"
+msgstr "Setor"
+
+#: ../../../www/score_tops.php:33 ../../../www/tops.php:32
+msgid "Top or Flash"
+msgstr "Top ou Flash"
+
+#: ../../../www/score_tops.php:34 ../../../www/tops.php:33
+#: ../../../www/ajax_boulder.php:72
+msgid "Referee"
+msgstr "Árbitro"
+
+#: ../../../www/score_tops.php:35 ../../../www/tops.php:34
+msgid "Value"
+msgstr "Valor"
 
 #: ../../../www/login.php:24
 msgid "Username"
@@ -53,13 +74,15 @@ msgstr "Senha"
 msgid "Close"
 msgstr "Fechar"
 
+#: ../../../www/score_gender.php:57
+msgid ""
+"<small><b>Tip</b>: Use ctrl+mouseroll to adjust on your display.</small>"
+msgstr ""
+"<small><b>Dica</b>: Use ctrl+mouseroll para ajusar em seu display.</small>"
+
 #: ../../../www/sectors.php:18
 msgid "Sectors & Points"
 msgstr "Setores & Valores"
-
-#: ../../../www/sectors.php:30 ../../../www/tops.php:26
-msgid "Sector"
-msgstr "Setor"
 
 #: ../../../www/navbar.php:65
 msgid "About ClimbU"
@@ -80,22 +103,6 @@ msgstr "tops"
 #: ../../../www/navbar.php:84
 msgid "points"
 msgstr "pontos"
-
-#: ../../../www/tops.php:31
-msgid "Boulder"
-msgstr "Boulder"
-
-#: ../../../www/tops.php:32
-msgid "Top or Flash"
-msgstr "Top ou Flash"
-
-#: ../../../www/tops.php:33 ../../../www/ajax_boulder.php:72
-msgid "Referee"
-msgstr "Árbitro"
-
-#: ../../../www/tops.php:34
-msgid "Value"
-msgstr "Valor"
 
 #: ../../../www/logout.php:22
 msgid "Do you really want to exit?"

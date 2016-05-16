@@ -78,10 +78,9 @@ Ending score
 
 ## Setup a advanced development environment (Linux)
 ```
-apt-get update & apt-get upgrade
-apt-get install php5-curl php5-sqlite php5-cli php5-mcrypt
+$ sudo apt-get update & apt-get upgrade
+$ sudo apt-get install php-curl php-cli php-mcrypt php-sqlite3 git 
 
-apt-get install git
 git clone https://github.com/intrd/climbu-livescoring/
 
 # Dependencies.. 
@@ -94,6 +93,8 @@ git clone https://github.com/intrd/php-mcrypt256CBC/
 # Locale setup 
 Uncomment a line containing pt_BR.UTF-8 on /etc/locale.gen and then run: sudo locale-gen
 
+# Whitelist to admin_db
+Check data/index.php
 ```
 ### Windows environments
 
@@ -145,7 +146,7 @@ The default language is en_US, but you can translat to any language u want, just
 ![running](/shots/running.jpg?raw=true "running")
 ```
 ./run.sh
-..and access http://localhost/ to open web interface (default login: intrd/meuovo123!)
+..and access http://localhost/ to open web interface (default login: intrd/meuovo123)
 
 ./admin_db.sh & 
 ..shortcut to run adminer at localhost:91 to manage sqlite3 database (just point ../data/climbu-livescoring.dat)

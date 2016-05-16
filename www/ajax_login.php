@@ -66,7 +66,7 @@ if (!isset($_SESSION['userdata'])){
   $userdata = new data("users","filter:username='$client'",false); 
   $userdata = $userdata->{0};
   $userdata->levels=1;
-  $userdata = mc_encrypt(json_encode($userdata));
+  $userdata = mc_encrypt(json_encode($userdata), ENCRYPTION_KEY);
   $_SESSION["userdata"]=$userdata;
 
   $yweek=date('W-Y', time());

@@ -17,6 +17,7 @@ include("../config.php");
 if (session_status() == PHP_SESSION_NONE) {
     session_start();
 }
+$showprices=false;
 if (isset($_SESSION["userdata"])){
     include("secure.php");
     if($levels!=1){
@@ -46,20 +47,25 @@ if (isset($_SESSION["userdata"])){
 <div id="menu" style="">
     <div class="panel list-group">
         <?php
-        $categories= new data("categories","all");
-        foreach ($categories as $category){
-            $athlets_list= new data("athletes","filter:category|".$category->name);
-            $cat=$category->name;
-            if ($cat=="male") $cat = _("male");
-            if ($cat=="female") $cat = _("female");
+        $genders= new data("genders","all");
+        //vd($categories);
+        //die;
+        foreach ($genders as $gender){
+            //$athlets_list= new data("athletes","filter:category|".$category->name);
+            $gender_tr=$gender->name;
+            //vd("custom:SELECT * FROM athletes WHERE active=1 AND category LIKE '%-$gender%'");
+            //die;
+            $athlets_list = new data("athletes","custom:SELECT * FROM athletes WHERE active=1 and gender='".$gender->name."'",false);
+            if ($gender_tr=="male") $gender_tr = _("male");
+            if ($gender_tr=="female") $gender_tr = _("female");
         ?>
-         <a href="#" class="list-group-item" data-toggle="collapse" data-target="#<?php echo $category->name;?>" data-parent="#menu"><i class="<?php echo $category->icon;?>"></i>&nbsp;&nbsp;&nbsp;<?php echo ucfirst($cat);?><span class="label label-info pull-right"><?php echo count((array)$athlets_list);?></span></a>
-         <div id="<?php echo $category->name;?>" class="sublinks collapse">
+         <a href="#" class="list-group-item" data-toggle="collapse" data-target="#<?php echo $gender->name;?>" data-parent="#menu"><i class="<?php echo $gender->icon;?>"></i>&nbsp;&nbsp;&nbsp;<?php echo ucfirst($gender_tr);?><span class="label label-info pull-right"><?php echo count((array)$athlets_list);?></span></a>
+         <div id="<?php echo $gender->name;?>" class="sublinks collapse">
              <div class="list-group-item small">
                 <table class="table"> 
                     <thead> 
                         <tr style="display: table-row;"> 
-                            <th>#</th>  
+                            <th>#<?php echo $gender->name;?></th>  
                             <th><?php echo _("Athlete"); ?></th>     
                             <th><?php echo _("Choose"); ?></th>                                         
                         </tr>                     

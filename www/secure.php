@@ -30,7 +30,7 @@ if (isset($_COOKIE["userdata"]) and !isset($_SESSION["userdata"])){
 
 if (isset($_SESSION["userdata"])){
     require_once($ext_path."php-mcrypt256CBC/functions.php");
-    $userdata = json_decode(mc_decrypt($_SESSION["userdata"]));
+    $userdata = json_decode(mc_decrypt($_SESSION["userdata"],ENCRYPTION_KEY));
     //vd($userdata);
     if (isset($userdata->levels)){
         $levels=$userdata->levels;
