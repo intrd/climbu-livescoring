@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: climbu-livescoring\n"
 "POT-Creation-Date: 2016-05-18 22:55-0300\n"
-"PO-Revision-Date: 2016-05-18 22:56-0300\n"
+"PO-Revision-Date: 2016-05-18 23:05-0300\n"
 "Last-Translator: intrd <x@dann.com.br>\n"
 "Language-Team: intrd <x@dann.com.br>\n"
 "Language: pt_BR\n"
@@ -37,7 +37,6 @@ msgid "Loading..."
 msgstr "Carregando..."
 
 #: ../../../www/score_tops.php:27
-#, fuzzy
 msgid "Latest tops"
 msgstr "Últimos tops"
 
