@@ -24,7 +24,7 @@ $qtdy=$_REQUEST["qty"];
             //die;
             ?>
             <div style="margin-top:5px;">
-                <center><h4 class="media-heading"><?php echo _("Lastest tops"); ?></h4></center>
+                <center><h4 class="media-heading"><?php echo _("Latest tops"); ?></h4></center>
             </div>
                     <div class="table-responsive" style="font-size:10px;">
                         <table class="table table-bordered">

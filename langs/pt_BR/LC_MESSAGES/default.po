@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: climbu-livescoring\n"
-"POT-Creation-Date: 2016-05-15 21:18-0300\n"
-"PO-Revision-Date: 2016-05-15 21:19-0300\n"
+"POT-Creation-Date: 2016-05-18 22:55-0300\n"
+"PO-Revision-Date: 2016-05-18 22:56-0300\n"
 "Last-Translator: intrd <x@dann.com.br>\n"
 "Language-Team: intrd <x@dann.com.br>\n"
 "Language: pt_BR\n"
@@ -22,7 +22,7 @@ msgstr "masculino"
 msgid "female"
 msgstr "feminino"
 
-#: ../../../www/attempt.php:69 ../../../www/score_tops.php:30
+#: ../../../www/attempt.php:69 ../../../www/score_tops.php:31
 #: ../../../www/tops.php:30 ../../../www/ajax_boulder.php:73
 msgid "Athlete"
 msgstr "Atleta"
@@ -36,29 +36,30 @@ msgstr "Escolha"
 msgid "Loading..."
 msgstr "Carregando..."
 
-#: ../../../www/score_tops.php:26
-msgid "Lastest tops"
+#: ../../../www/score_tops.php:27
+#, fuzzy
+msgid "Latest tops"
 msgstr "Últimos tops"
 
-#: ../../../www/score_tops.php:31 ../../../www/tops.php:31
+#: ../../../www/score_tops.php:32 ../../../www/tops.php:31
 msgid "Boulder"
 msgstr "Boulder"
 
-#: ../../../www/score_tops.php:32 ../../../www/sectors.php:30
+#: ../../../www/score_tops.php:33 ../../../www/sectors.php:30
 #: ../../../www/tops.php:26
 msgid "Sector"
 msgstr "Setor"
 
-#: ../../../www/score_tops.php:33 ../../../www/tops.php:32
+#: ../../../www/score_tops.php:34 ../../../www/tops.php:32
 msgid "Top or Flash"
 msgstr "Top ou Flash"
 
-#: ../../../www/score_tops.php:34 ../../../www/tops.php:33
+#: ../../../www/score_tops.php:35 ../../../www/tops.php:33
 #: ../../../www/ajax_boulder.php:72
 msgid "Referee"
 msgstr "Árbitro"
 
-#: ../../../www/score_tops.php:35 ../../../www/tops.php:34
+#: ../../../www/score_tops.php:36 ../../../www/tops.php:34
 msgid "Value"
 msgstr "Valor"
 

@@ -79,7 +79,10 @@ Ending score
 ## Setup a advanced development environment (Linux)
 ```
 $ sudo apt-get update & apt-get upgrade
-$ sudo apt-get install php-curl php-cli php-mcrypt php-sqlite3 git 
+$ sudo apt-get install php-curl php-cli php-mcrypt php-sqlite3 php-fpm git 
+$ sudo adduser climbu
+$ sudo adduser climbu sudo
+$ sudo usermod -a -G www-data climbu
 
 git clone https://github.com/intrd/climbu-livescoring/
 
@@ -89,6 +92,9 @@ git clone https://github.com/intrd/php-adminer/
 git clone https://github.com/intrd/php-common/
 git clone https://github.com/intrd/sqlite-dbintrd/
 git clone https://github.com/intrd/php-mcrypt256CBC/
+
+$ chown -R climbu:www-data climbu-livescoring/
+$ chmod -R 774 climbu-livescoring/
 
 # Locale setup 
 Uncomment a line containing pt_BR.UTF-8 on /etc/locale.gen and then run: sudo locale-gen
