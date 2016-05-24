@@ -112,6 +112,7 @@ Podium
 ![ct](/shots/end.jpg?raw=true "end")
 
 ![rankreal](/shots/rankreal.jpg?raw=true "rankreal")
+
 Final score
 
 # Setup a advanced development environment (Linux)
@@ -131,8 +132,7 @@ $ composer update -o #to update
 $ ./runwww.sh #to run climbu locally, acess by browsing http://localhost (its a single thread webserver for development only)
 $ ./admindb.sh #to launch Adminer on http://localhost:8000
 ```
-# Translation/Localte problems?
-To solve locale problems
+# Translation/Locale problems?
 
 Uncomment a line containing `pt_BR.UTF-8` on `/etc/locale.gen` and then.. 
 ```
@@ -141,7 +141,6 @@ $ sudo locale-gen
 
 # Whitelisted ips to use admindb.sh
 The whitelist is disabled by default, if you want to enable it to secure Adminer access check `dba/index.php`
-```
 
 # Translations
 
