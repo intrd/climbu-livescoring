@@ -1,0 +1,40 @@
+{
+    "name": "intrd/climbu-livescoring",
+    "description": "The ClimbU Livescoring is a multiplatform application that allows anyone to manage/display real-time scores. Originally developed for climbing competition(marathon) but can be easily adapted to other sports, other formats.",
+    "keywords": ["competition","score","display","php","climbing","ranking"],
+    "homepage": "http://github.com/intrd/climbu-livescoring",
+    "authors": [
+            {
+                "name": "intrd (Danilo Salles)",
+                "email": "x@dann.com.br",
+                "homepage": "http://dann.com.br",
+                "role": "Developer"
+            }
+        ],
+    "license": "CC-BY-SA-4.0",
+    "require": {
+        "php": ">=5.3.0",
+        "intrd/php-common": ">=1.0.x-dev <dev-master",
+        "intrd/sqlite-dbintrd": ">=1.0.x-dev <dev-master",
+        "intrd/php-mcrypt256CBC": ">=1.0.x-dev <dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "climbu\\":"src/"
+        }
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "wget https://www.adminer.org/latest-en.php -O dba/adminer.php"
+        ],
+        "post-update-cmd": [
+            "wget https://www.adminer.org/latest-en.php -O dba/adminer.php"
+        ]
+    },
+    "extra": {
+        "author_twitter":"intrd",
+        "copyright_author":"intrd",
+        "license_title":"Creative Commons Attribution-ShareAlike 4.0",
+        "license_url":"http://creativecommons.org/licenses/by-sa/4.0"
+    }
+}

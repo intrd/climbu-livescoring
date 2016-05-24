@@ -1,45 +1,52 @@
 <?php 
 /**
- * ClimbU - Dynamic and open source live scoring for competitions
- * 
-* @package climbu-livescoring
-* @version 2.0
-* @link https://github.com/intrd/climbu-livescoring/
-* @category system
-* @author intrd - http://dann.com.br/
-* @copyright 2015 intrd
-* @license Creative Commons Attribution-ShareAlike 4.0 - http://creativecommons.org/licenses/by-sa/4.0/
-* Dependencies: Yes, details at README.md
-*/
+ * The ClimbU Livescoring is a multiplatform application that allows anyone to manage/display real-time scores. Originally developed for climbing competition(marathon) but can be easily adapted to other sports, other formats.
+* 
+* @package intrd/climbu-livescoring
+* @version 3.0
+* @tags competition, score, display, php, climbing, ranking
+* @link http://github.com/intrd/climbu-livescoring
+* @author intrd (Danilo Salles) - http://dann.com.br
+* @copyright (CC-BY-SA-4.0) 2016, intrd
+* @license Creative Commons Attribution-ShareAlike 4.0 - http://creativecommons.org/licenses/by-sa/4.0
+* Dependencies: 
+* - php >=5.3.0
+* - intrd/php-common >=1.0.x-dev <dev-master
+* - intrd/sqlite-dbintrd >=1.0.x-dev <dev-master
+* - intrd/php-mcrypt256CBC >=1.0.x-dev <dev-master
+*** @docbloc 1.1 */
+
+require __DIR__ . '/vendor/autoload.php';
+use php\mcrypt256cbc as cry;
+
 
 ini_set('session.gc_maxlifetime', 172800);
 session_set_cookie_params(172800);
 
-//change this variables..
+//CONFIG VARS
 date_default_timezone_set('America/Sao_Paulo'); //set your timezone
-$debug=false; //for sql debugging
-$homehost="192.168.0.105"; //change to local network address
-$viewlog="viewlog.html"; //www logfile
-$admin="intrd"; //admin username
+$debug=false; //enable sql debugging
+$admin="intrd"; //choose a admin user (default: intrd@meuovo123)
 $navbar_title="VI Campeonado Caipira"; //set your navbar display title
 if (!defined('ENCRYPTION_KEY')) define('ENCRYPTION_KEY', "13678347678834841483847458183479"); //your privatekey to decrypt user DB passwords
 
 $root=dirname(__FILE__)."/";
-$ext_path=$root."../";
-$tmp_path=$ext_path."TMP/";
-$data_path=$ext_path."DATA/";
+$tmp_path=$root."TMP/";
+$data_path=$root."DATA/";
+$log_path=$root."LOG/";
 
-$db_path=$root."data/climbu-livescoring.dat";
+$db_path=$data_path."climbu-livescoring.dat";
+$viewlog=$log_path."viewlog.html"; //www logfile
+$cookie=$tmp_path."cookie_climbu"; 
 $browser_agent="Mozilla/5.0 (Windows NT 6.3; rv:36.0) Gecko/20100101 Firefox/36.0";
+$homehost="192.168.0.105"; //change to local network address (remove this)
 if (isset($_SERVER['REMOTE_ADDR']) and $_SERVER['REMOTE_ADDR']=="127.0.0.1") $homehost="localhost:90";
 $homeurl="http://$homehost";
-$cookie=$tmp_path."cookie_climbu"; 
 
 //$language = "pt_BR.UTF-8";
 $language = "en_US.UTF-8";
 if (isset($_COOKIE["userdata"]) ){
-	require_once($ext_path."php-mcrypt256CBC/functions.php");
-	$userdata = json_decode(mc_decrypt($_COOKIE["userdata"], ENCRYPTION_KEY));
+	$userdata = json_decode(cry::mc_decrypt($_COOKIE["userdata"], ENCRYPTION_KEY));
 	if (isset($userdata->language)) $language = $userdata->language;
 }
 putenv("LANG=" . $language); 
@@ -49,10 +56,5 @@ $domain = "default";
 bindtextdomain($domain, $root."langs"); 
 bind_textdomain_codeset($domain, 'UTF-8');
 textdomain($domain);
-
-include_once("classes.php");
-include_once("functions.php");
-
-
 
 ?>

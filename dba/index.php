@@ -1,4 +1,4 @@
-<?php 
+<?php
 /**
  * The ClimbU Livescoring is a multiplatform application that allows anyone to manage/display real-time scores. Originally developed for climbing competition(marathon) but can be easily adapted to other sports, other formats.
 * 
@@ -16,22 +16,8 @@
 * - intrd/php-mcrypt256CBC >=1.0.x-dev <dev-master
 *** @docbloc 1.1 */
 
-include("secure.php");
-
-$can_logout = true;
-
-if($can_logout){
-	setcookie ("userdata", "", time() - 3600);
-    session_destroy();
-
-    echo '
-    <div class="result alert alert-success" data-pg-id="159"> 
-          <strong data-pg-id="160">THANK YOU!</strong>        
-    </div>
-    <script>
-      window.location.replace("/#score");
-      window.location.reload(true);
-    </script>
-    ';
+if (1==1 //1==1 = whitelist disabled
+	or $_SERVER['REMOTE_ADDR']=="192.168.0.103"){ //whitelist
+	require("adminer.php"); //calling adminer
 }
 ?>
