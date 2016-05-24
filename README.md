@@ -57,6 +57,7 @@ Download SDcard image here: (I recommend to use a Class 10 SD Card)
 
 1. Just burn the image, boot up RPI3 and it will create a new wifi network called "ClimbU", default passwd: `climbu123654`
 2. Connect and browse to `http://10.10.0.1` to access the ClimbU application, default login/pw: `intrd/meuovo123`
+3. If you need to open a terminal on RPI3, SSH to 10.10.0.1 w/ `u: climbu, pw: 11`
 
 ## Windows
 * [Portables](https://github.com/intrd/climbu-livescoring/releases) - latest version of climbu-livescoring portable 
