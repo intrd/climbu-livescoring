@@ -31,13 +31,11 @@ The ClimbU Livescoring is a multiplatform application that allows anyone to mana
 </tr>
 <tr>
 <th>Dependencies</th>
-<td> &#8226; php >=5.3.0 &#8226; intrd/php-common >=1.0.x-dev <dev-master &#8226; intrd/sqlite-dbintrd >=1.0.x-dev <dev-master &#8226; intrd/php-mcrypt256CBC >=1.0.x-dev <dev-master</td>
+<td> &#8226; php >=5.3.0 &#8226; intrd/php-common >=1.0.x-dev &#8226; intrd/sqlite-dbintrd >=1.0.x-dev &#8226; intrd/php-mcrypt256CBC >=1.0.x-dev </td>
 </tr>
 </table>
 </span>
 <!-- @docbloc 1.1 -->
-
-![climbu1](/shots/climbu1.jpg?raw=true "climbu1")
 
 # Intro
 
