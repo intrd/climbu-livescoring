@@ -56,7 +56,7 @@ If you don't have an RPI3, don't worry, it works too on any desktop PC following
 Download SDcard image here: (I recommend to use a Class 10 SD Card)
 
 1. Just burn the image, boot up RPI3 and it will create a new wifi network called "ClimbU", default passwd: `climbu123654`
-2. Connect and browse to `http://10.10.0.1` to access the application, default login/pw: `intrd/meuovo123`
+2. Connect and browse to `http://10.10.0.1` to access the ClimbU application, default login/pw: `intrd/meuovo123`
 
 ## Windows
 * [Portables](https://github.com/intrd/climbu-livescoring/releases) - latest version of climbu-livescoring portable 
@@ -68,11 +68,14 @@ I've packed a portable version of climbu-lvescoring, easy-to-install, just follo
 1. Install `vc_redist.x86.exe` located at `climbu/climbu-livescoring/winlibs/vc_redist.x86.exe` or download here [Visual C++ Redistributable for Visual Studio 2015](http://www.microsoft.com/en-us/download/details.aspx?id=48145)
 2. Download [latest portable version](https://github.com/intrd/climbu-livescoring/releases) of climbu-livescoring, unzip at `c:\climbu\`
 3. Double click at `windows_run.bat` to run and access browsing to `http://192.168.0.100/`, default login/pw: `intrd/meuovo123`
-4. To admin, double click at `windows_admin_db.bat` to run and access browsing to `http://192.168.0.100:91/`, than point adminer to `../DATA/climbu-livescoring.dat`
 
 # Administration
 
-To setup your users, and details of competition like categories, sectors and athletes, browse to http://10.10.0.1:81, then point Adminer to `../DATA/climbu-livescoring.dat`. Not yet created an user-friendly admin interface, you will have to setup directly from the database.
+Not yet created an user-friendly admin interface, you will have to setup directly from the database.
+
+* To setup your users, and details of competition like categories, sectors and athletes, browse to http://10.10.0.1:81, then point Adminer to `../DATA/climbu-livescoring.dat`. 
+
+Note: On Windows setup, you need double click at `windows_admin_db.bat` to launch Adminer first, then browse to `http://localhost:91/`.
 
 ![sqliteadmin](/shots/sqliteadmin.jpg?raw=true "sqliteadmin")
 
