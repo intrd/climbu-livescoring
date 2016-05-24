@@ -111,8 +111,8 @@ Working display
 Podium
 ![ct](/shots/end.jpg?raw=true "end")
 
-Final score
 ![rankreal](/shots/rankreal.jpg?raw=true "rankreal")
+Final score
 
 # Setup a advanced development environment (Linux)
 
