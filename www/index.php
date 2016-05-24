@@ -18,13 +18,15 @@
 
 include("../config.php");
 use php\intrdCommons as i;
+use database\dbintrd as db;
 
 if (session_status() == PHP_SESSION_NONE) {
     session_start();
 }
 if(!isset($_SESSION["userdata"])) i::fwrite_a($viewlog,"[".date('Y-m-d h:i:s')."] ".$_SERVER['REMOTE_ADDR']." visited... "."@".$_SERVER['PHP_SELF']."<br>\n");
 
-
+$configs = new db('configs',"filter:name='navbar_title'",false); 
+$navbar_title=$configs->{0}->value;
 
 ?>
 

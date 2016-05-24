@@ -19,15 +19,11 @@
 require __DIR__ . '/vendor/autoload.php';
 use php\mcrypt256cbc as cry;
 
-
 ini_set('session.gc_maxlifetime', 172800);
 session_set_cookie_params(172800);
 
-//CONFIG VARS
 date_default_timezone_set('America/Sao_Paulo'); //set your timezone
 $debug=false; //enable sql debugging
-$admin="intrd"; //choose a admin user (default: intrd@meuovo123)
-$navbar_title="VI Campeonado Caipira"; //set your navbar display title
 if (!defined('ENCRYPTION_KEY')) define('ENCRYPTION_KEY', "13678347678834841483847458183479"); //your privatekey to decrypt user DB passwords
 
 $root=dirname(__FILE__)."/";
@@ -39,9 +35,6 @@ $db_path=$data_path."climbu-livescoring.dat";
 $viewlog=$log_path."viewlog.html"; //www logfile
 $cookie=$tmp_path."cookie_climbu"; 
 $browser_agent="Mozilla/5.0 (Windows NT 6.3; rv:36.0) Gecko/20100101 Firefox/36.0";
-$homehost="192.168.0.105"; //change to local network address (remove this)
-if (isset($_SERVER['REMOTE_ADDR']) and $_SERVER['REMOTE_ADDR']=="127.0.0.1") $homehost="localhost:90";
-$homeurl="http://$homehost";
 
 //$language = "pt_BR.UTF-8";
 $language = "en_US.UTF-8";
@@ -52,7 +45,6 @@ if (isset($_COOKIE["userdata"]) ){
 putenv("LANG=" . $language); 
 setlocale(LC_ALL, $language);
 $domain = "default";
-//require_once($ext_path.'php-gettext/gettext.inc');
 bindtextdomain($domain, $root."langs"); 
 bind_textdomain_codeset($domain, 'UTF-8');
 textdomain($domain);

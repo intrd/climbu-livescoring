@@ -37,8 +37,6 @@ The ClimbU Livescoring is a multiplatform application that allows anyone to mana
 </span>
 <!-- @docbloc 1.1 -->
 
-# Intro
-
 Extremely lightweight and designed to run over Raspberry Pi 3. 
 
 - The RPI3 image is pre-configured to act as ClimbU server, WiFi AP Hotspot and HDMI display output
@@ -69,13 +67,12 @@ I've packed a portable version of climbu-lvescoring, easy-to-install, just follo
 
 1. Install `vc_redist.x86.exe` located at `climbu/climbu-livescoring/winlibs/vc_redist.x86.exe` or download here [Visual C++ Redistributable for Visual Studio 2015](http://www.microsoft.com/en-us/download/details.aspx?id=48145)
 2. Download [latest portable version](https://github.com/intrd/climbu-livescoring/releases) of climbu-livescoring, unzip at `c:\climbu\`
-3. Edit `climbu/climbu-livescoring/config.php` and change `$homehost="192.168.0.100";` to your `LAN IP ADDRESS` (to test on 1st run, change only this variable)
-4. Double click at `windows_run.bat` to run and access browsing to `http://192.168.0.100/`, default login/pw: `intrd/meuovo123`
-5. To admin, double click at `windows_admin_db.bat` to run and access browsing to `http://192.168.0.100:91/`, than point adminer to `../data/climbu-livescoring.dat`
+3. Double click at `windows_run.bat` to run and access browsing to `http://192.168.0.100/`, default login/pw: `intrd/meuovo123`
+4. To admin, double click at `windows_admin_db.bat` to run and access browsing to `http://192.168.0.100:91/`, than point adminer to `../DATA/climbu-livescoring.dat`
 
 # Administration
 
-To setup your users, and details of competition like categories, sectors and athletes, browse to http://10.10.0.1:81, then point Adminer to `../data/climbu-livescoring.dat`. Not yet created an user-friendly admin interface, you will have to setup directly from the database.
+To setup your users, and details of competition like categories, sectors and athletes, browse to http://10.10.0.1:81, then point Adminer to `../DATA/climbu-livescoring.dat`. Not yet created an user-friendly admin interface, you will have to setup directly from the database.
 
 ![sqliteadmin](/shots/sqliteadmin.jpg?raw=true "sqliteadmin")
 
