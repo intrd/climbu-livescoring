@@ -75,7 +75,7 @@ Not yet created an user-friendly admin interface, you will have to setup directl
 
 * To setup your users, and details of competition like categories, sectors and athletes, browse to http://10.10.0.1:81, then point Adminer to `../DATA/climbu-livescoring.dat`. 
 
-Note: On Windows setup, you need double click at `windows_admin_db.bat` to launch Adminer first, then browse to `http://localhost:91/`.
+***Note***: On Windows setup, you need double click at `windows_admin_db.bat` to launch Adminer first, then browse to `http://localhost:91/`.
 
 ![sqliteadmin](/shots/sqliteadmin.jpg?raw=true "sqliteadmin")
 
