@@ -29,7 +29,7 @@ use database\dbintrd as db;
                 $kk=key($athletes_count);
                 $athletes_count=$athletes_count->$kk;
         ?>
-            <div id="orderlist" style="width:480px;float:left;padding:5px;height:449px;"><?php echo _("Loading...");?></div>
+            <div id="orderlist" style="width:50%;float:left;padding:5px;height:449px;"><?php echo _("Loading...");?></div>
                 <script>
                     var c = 0;
                     setInterval(function(){ 
@@ -56,7 +56,7 @@ use database\dbintrd as db;
                 </script>  
             </div>
 
-            <div id="orderlist_attempts" style="width:440px;float:left;padding:5px;height:449px;"><?php echo _("Loading...");?></div>
+            <div id="orderlist_attempts" style="width:48%;float:left;padding:5px;height:449px;"><?php echo _("Loading...");?></div>
                 <script>
                     var c_attempts = 0;
                     setInterval(function(){ 

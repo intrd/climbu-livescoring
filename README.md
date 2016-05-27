@@ -56,8 +56,8 @@ If you don't have an RPI3, don't worry, it works too on any desktop PC following
 Download SDcard image here: (I recommend to use a Class 10 SD Card)
 
 1. Just burn the image, boot up RPI3 and it will create a new wifi network called "ClimbU", default passwd: `climbu123654`
-2. Connect and browse to `http://10.10.0.1` to access the ClimbU application, default login/pw: `intrd/meuovo123`
-3. If you need to open a terminal on RPI3, SSH to 10.10.0.1 w/ `u: climbu, pw: 11`
+2. Connect and browse to `http://10.0.0.1` to access the ClimbU application, default login/pw: `intrd/meuovo123`
+3. If you need to open a terminal on RPI3, SSH to 10.0.0.1 w/ `u: climbu, pw: 11`
 
 ## Windows
 * [Portables](https://github.com/intrd/climbu-livescoring/releases) - latest version of climbu-livescoring portable 
@@ -74,7 +74,7 @@ I've packed a portable version of climbu-lvescoring, easy-to-install, just follo
 
 Not yet created an user-friendly admin interface, you will have to setup directly from the database.
 
-* To setup your users, and details of competition like categories, sectors and athletes, browse to http://10.10.0.1:81, then point Adminer to `../DATA/climbu-livescoring.dat`. 
+* To setup your users, and details of competition like categories, sectors and athletes, browse to http://10.0.0.1:81, then point Adminer to `../DATA/climbu-livescoring.dat`. 
 
 ***Note***: On Windows setup, you need double click at `windows_admin_db.bat` to launch Adminer first, then browse to `http://localhost:91/`.
 
@@ -119,11 +119,11 @@ Final score
 System requiriments & dependencies
 ```
 $ sudo apt-get update & apt-get upgrade
-$ sudo apt-get install php-curl php-cli php-mcrypt php-sqlite3 php-fpm git nginx
+$ sudo apt-get install curl php-curl php-cli php-mcrypt php-sqlite3 php-fpm git nginx
 $ curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/local/bin --filename=composer
 
 Now download the package (Composer automatically install all dependencies)
-$ git clone https://github.com/intrd/telegram-livescoring && cd telegram-livescoring
+$ git clone https://github.com/intrd/climbu-livescoring && cd climbu-livescoring
 
 $ composer install -o #to install
 $ composer update -o #to update
