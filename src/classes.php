@@ -57,6 +57,7 @@ class engine {
 	}
 
 	public function get_rank($category,$start=false,$qty=false){
+		global $limit_sumrank;
 		//$athletes = new data("athletes","filter:category='$category' and active='1'",false);
 		//SELECT * FROM ".DBIntrd::$table." WHERE ".$filter
 		if($category=="all"){
@@ -98,8 +99,10 @@ class engine {
 			$ascents = new db("attempts","filter:athlete='$athlete_name' and ascent=1",false);
 			$score[$athlete_name]["tops"] = count( (array)$ascents );
 			$sum=0;
+			$topx=array();
 			foreach($ascents as $ascent){
 				$value=engine::get_boulder($ascent->sector,$ascent->boulder)["value_top"];
+				$topx[]=$value;
 				$sum=$sum+$value;
 			}
 			$score[$athlete_name]["tops_sum"]=$sum;
@@ -107,12 +110,23 @@ class engine {
 			$flashs = new db("attempts","filter:athlete='$athlete_name' and ascent=2",false);
 			$score[$athlete_name]["flashs"] = count( (array)$flashs );
 			$sum=0;
+			$flashx=array();
 			foreach($flashs as $flash){
 				$value=engine::get_boulder($flash->sector,$flash->boulder)["value_flash"];
+				$flashx[]=$value;
 				$sum=$sum+$value;
 			}
 			$score[$athlete_name]["flashs_sum"]=$sum;
 			$score[$athlete_name]["total"]=$score[$athlete_name]["flashs_sum"]+$score[$athlete_name]["tops_sum"];
+
+			if ($limit_sumrank){
+				$sumx=array();
+				$sumx=array_merge($topx,$flashx);
+				arsort($sumx);
+				$sumx=array_slice($sumx,0,$limit_sumrank);
+				//var_dump($sumx);
+				$score[$athlete_name]["total"]=array_sum($sumx);
+			}
 			
 		}
 

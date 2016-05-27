@@ -35,6 +35,7 @@ $db_path=$data_path."climbu-livescoring.dat";
 $viewlog=$log_path."viewlog.html"; //www logfile
 $cookie=$tmp_path."cookie_climbu"; 
 $browser_agent="Mozilla/5.0 (Windows NT 6.3; rv:36.0) Gecko/20100101 Firefox/36.0";
+$limit_sumrank=7; //TO SUM ONLY FIRST 7 TOP VALUES, SET TO false, TO SUMM ALL ATHLETE TOPS
 
 //$language = "pt_BR.UTF-8";
 $language = "en_US.UTF-8";

@@ -49,10 +49,10 @@ $qtdy=$_REQUEST["qty"];
                             $sector=$top->sector;
                             //vd($boulder);
                             $col=$boulder["color"];
-                            //$val=
-                            //vd($col);
-                            if ($top->ascent==1) { $asc="Top"; $val=$boulder["value_top"]; } 
-                            if ($top->ascent==2) { $asc="Flash"; $val=$boulder["value_flash"]; } 
+                            $val=$top->value;
+                            //var_dump($top);
+                            if ($top->ascent==1) { $asc="Top"; } 
+                            if ($top->ascent==2) { $asc="Flash"; } 
                           ?>
                           <tr>
                             <td><?php echo $top->athlete; ?></td>

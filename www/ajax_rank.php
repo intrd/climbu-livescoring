@@ -40,9 +40,8 @@ if ($cat=="female") $catg = _("female");
                         <th></th>   
                         <th>Catg</th>                       
                         <th>Tops</th>                             
-                        <th>Flashs</th>
-                        <th>Σ Flashs</th>   
-                        <th>Σ</th>                        
+                        <th>Flashs</th> 
+                        <th>Σ (7+)</th>                        
                     </tr>                         
                 </thead>                     
                 <tbody style="display: table-row-group;"> 
@@ -69,7 +68,6 @@ if ($cat=="female") $catg = _("female");
                             <td style=\"padding:1px;\">".ucfirst($position["category"])."</td>
                             <td style=\"padding:1px;\">".$position["tops"]."</td>
                             <td style=\"padding:1px;\">".$position["flashs"]."</td>
-                            <td style=\"padding:1px;\">".$position["flashs_sum"]."</td>
                             <td style=\"padding:1px;\">".$position["total"]."</td>
                         </tr>
                         ";

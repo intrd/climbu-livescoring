@@ -86,6 +86,12 @@ if (isset($_POST["boulder"])){
 	//$attempt->boulder_letter=1;
 	//die;
 	//die;
+	
+	if ($attempt->ascent==1){
+		$attempt->value=$bould["value_top"];
+	}else if ($attempt->ascent==2){
+		$attempt->value=$bould["value_flash"];
+	}
 
 	if($attempt->save()){
 		//echo "<b>Done</b>! added to queue...";
