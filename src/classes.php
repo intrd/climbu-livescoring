@@ -36,8 +36,9 @@ class engine {
 		$boulderdata=array();
 		$boulders = new db('boulders',"all"); 
 		//var_dump($boulders);
-		$k=1;
+		$x=1;
 		foreach ($boulders as $key=>$boulder){
+			$k=pow($x,2);
 			$boulderdata[$key]=(array)$boulder;
 			if($key==0) {
 				$boulderdata[$key]["value_top"] = $sector->value_start*$k;
@@ -46,7 +47,7 @@ class engine {
 				$boulderdata[$key]["value_top"] = $boulderdata[$key-1]["value_top"]+$sector->value_interval*$k;
 				$boulderdata[$key]["value_flash"] = $boulderdata[$key]["value_top"]+$sector->value_flashincrease*$k;
 			}
-			$k++;
+			$x++;
 		}
 		$data["sector"]=$sector;
 		$data["boulders"]=$boulderdata;
