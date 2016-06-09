@@ -24,12 +24,12 @@ class engine {
 	public function get_sectordata($sector=false){
 		//global $data_path;
 		//echo $data_path;
+		global $rank_exp_increment;
 		if (!$sector){
 			$sectors = new db('sectors',"filter:id>0",false);	
 		}else{
 			$sectors = new db('sectors',"filter:id='$sector'",false);	
-		}
-		 
+		}	 
 		$sector=$sectors->{0};
 		//vd($sector);
 		//die;
@@ -38,7 +38,8 @@ class engine {
 		//var_dump($boulders);
 		$x=1;
 		foreach ($boulders as $key=>$boulder){
-			$k=pow($x,2);
+			$k=pow($x,$rank_exp_increment);
+			//$k=1;
 			$boulderdata[$key]=(array)$boulder;
 			if($key==0) {
 				$boulderdata[$key]["value_top"] = $sector->value_start*$k;
