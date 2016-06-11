@@ -22,7 +22,7 @@ use climbu\engine as cu;
 ?>
         <?php 
             $sec=$userdata->sector;
-            $tops = new db("attempts","filter:sector='$sec' and (ascent='1' or ascent='2')"); 
+            $tops = new db("attempts","filter:sector='$sec' and (ascent='1' or ascent='2') order by datetime desc"); 
             $boulders=cu::get_sectordata($sec);
             $boulders=$boulders["boulders"];
             //vd($boulders);

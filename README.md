@@ -64,19 +64,19 @@ Download SDcard image here: (I recommend to use a Class 10 SD Card)
 
 ![running_win](/shots/running_win.jpg?raw=true "running_win")
 
-I've packed a portable version of climbu-lvescoring, easy-to-install, just follow this 5 steps below..
+I've packed a portable version of climbu-lvescoring, easy-to-install, just follow this steps below..
 
 1. Install `vc_redist.x86.exe` located at `climbu/climbu-livescoring/winlibs/vc_redist.x86.exe` or download here [Visual C++ Redistributable for Visual Studio 2015](http://www.microsoft.com/en-us/download/details.aspx?id=48145)
 2. Download [latest portable version](https://github.com/intrd/climbu-livescoring/releases) of climbu-livescoring, unzip at `c:\climbu\`
-3. Double click at `windows_run.bat` to run and access browsing to `http://192.168.0.100/`, default login/pw: `intrd/meuovo123`
+3. Double click at `runwww.bat` to run and browse to your local ip, `http://localhost/` or network ip, something like `http://192.168.0.100/`, default login/pw: `juiz1/asd123asd`
 
 # Administration
 
 Not yet created an user-friendly admin interface, you will have to setup directly from the database.
 
-* To setup your users, and details of competition like categories, sectors and athletes, browse to http://10.0.0.1:81, then point Adminer to `../DATA/climbu-livescoring.dat`. 
+* To setup your users, and details of competition like categories, sectors and athletes, browse to http://localhost:81, then point Adminer to `../DATA/climbu-livescoring.dat`. 
 
-***Note***: On Windows setup, you need double click at `windows_admin_db.bat` to launch Adminer first, then browse to `http://localhost:91/`.
+***Note***: On Windows setup, you need double click at `admindb.bat` to launch Adminer first, then browse to `http://localhost:91/`.
 
 ![sqliteadmin](/shots/sqliteadmin.jpg?raw=true "sqliteadmin")
 
@@ -101,7 +101,19 @@ Customizable categories to adapt to your own competition format
 ![register_categs](/shots/register_catgs.jpg?raw=true "register_catgs")
 
 # Climbu Livescoring IRL 
-CTF Bouldering marathon 2016 (Vinhedo, São Paulo/Brazil)
+## UNICAMP Campeonato Capira 2016 (Campinas, São Paulo/Brazil)
+![crowd1](/shots/climbin1.jpg?raw=true "climbing people")
+
+ClimbU Running on RaspberryPi 3
+![raspberrypi](/shots/rpiscore.jpg?raw=true "raspberrypi score")
+
+RaspberryPi 3 test before comp
+![raspberrypi](/shots/rpi3test.jpg?raw=true "raspberrypi score")
+
+Climbing people
+![raspberrypi](/shots/clim.jpg?raw=true "climbing people")
+
+## CTF Bouldering marathon 2016 (Vinhedo, São Paulo/Brazil)
 ![ct](/shots/ct.jpg?raw=true "ct")
 
 Working display
@@ -114,7 +126,7 @@ Podium
 
 Final score
 
-# Setup a advanced development environment (Linux)
+# Setup a advanced development environment (Linux or Windows w/ Composer)
 
 System requiriments & dependencies
 ```
