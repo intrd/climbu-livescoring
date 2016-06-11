@@ -104,14 +104,17 @@ Customizable categories to adapt to your own competition format
 ## UNICAMP Campeonato Capira 2016 (Campinas, São Paulo/Brazil)
 ![crowd1](/shots/climbin1.jpg?raw=true "climbing people")
 
-ClimbU Running on RaspberryPi 3
+ClimbU Running on a single RaspberryPi 3 (acting as router/server/display)
 ![raspberrypi](/shots/rpiscore.jpg?raw=true "raspberrypi score")
 
 RaspberryPi 3 test before comp
 ![raspberrypi](/shots/rpi3test.jpg?raw=true "raspberrypi score")
 
 Climbing people
-![raspberrypi](/shots/clim.jpg?raw=true "climbing people")
+![climbing](/shots/clim.jpg?raw=true "climbing people")
+
+Climbing people (Climbu @ background)
+![climbing](/shots/clim2.jpg?raw=true "climbing people")
 
 ## CTF Bouldering marathon 2016 (Vinhedo, São Paulo/Brazil)
 ![ct](/shots/ct.jpg?raw=true "ct")
