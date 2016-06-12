@@ -68,7 +68,7 @@ I've packed a portable version of climbu-lvescoring, easy-to-install, just follo
 
 1. Install `vc_redist.x86.exe` located at `climbu/climbu-livescoring/winlibs/vc_redist.x86.exe` or download here [Visual C++ Redistributable for Visual Studio 2015](http://www.microsoft.com/en-us/download/details.aspx?id=48145)
 2. Download [latest portable version](https://github.com/intrd/climbu-livescoring/releases) of climbu-livescoring, unzip at `c:\climbu\`
-3. Double click at `runwww.sh` to run and browse to your local ip, `http://localhost/` or network ip, something like `http://192.168.0.100/`, default login/pw: `juiz1/asd123asd`
+3. Double click at `win_runwww.bat` to run and browse to your local ip, `http://localhost/` or network ip, something like `http://192.168.0.100/`, default login/pw: `juiz1/asd123asd`
 
 # Administration
 
@@ -76,7 +76,7 @@ Not yet created an user-friendly admin interface, you will have to setup directl
 
 * To setup your users, and details of competition like categories, sectors and athletes, browse to http://localhost:81, then point Adminer to `../DATA/climbu-livescoring.dat`. 
 
-***Note***: On Windows setup, you need double click at `admindb.sh` to launch Adminer first, then browse to `http://localhost:91/`.
+***Note***: On Windows setup, you need double click at `win_admindb.bat` to launch Adminer first, then browse to `http://localhost:91/`.
 
 ![sqliteadmin](/shots/sqliteadmin.jpg?raw=true "sqliteadmin")
 
