@@ -53,7 +53,7 @@ If you don't have an RPI3, don't worry, it works too on any desktop PC following
 
 ## Raspberry Pi 3 Image
 
-Download SDcard image here: (I recommend to use a Class 10 SD Card)
+Download SDcard image here: [backup.img.gz](https://drive.google.com/open?id=0B6VYbSIro9VTY1Z0MUI2eGFVeG8) (I recommend to use a 4gb Class 10 SD Card)
 
 1. Just burn the image, boot up RPI3 and it will create a new wifi network called "ClimbU", default passwd: `climbu123654`
 2. Connect and browse to `http://10.0.0.1` to access the ClimbU application, default login/pw: `intrd/meuovo123`
