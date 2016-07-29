@@ -24,14 +24,16 @@ if($levels!=1){
 use php\intrdCommons as i;
 use climbu\engine as cu;
 use database\dbintrd as db;
-//vd($_POST);
-
+//i::vd($_POST);
+//die;
 
 if (isset($_POST["boulder"])){
 
 	$postdata=$_POST;
 	$postdata["user"]=$userdata->username;
 	$postdata["sector"]=$userdata->sector;
+
+	//unset($postdata["group"]);
 
 	if ( !is_numeric($postdata["boulder"]) or !is_numeric($postdata["ascent"]) ){
 			echo"<span style='color:red;'>"._("<b>Error</b>: Problem, register again!")."</span>";
@@ -47,7 +49,7 @@ if (isset($_POST["boulder"])){
 		$attempt->$key=$value;
 	}
 
-	//vd($attempt);
+	//i::vd($attempt);
 	//die;
 
 	//$checkdup_target_object=$attempt->target_object;
@@ -81,7 +83,7 @@ if (isset($_POST["boulder"])){
 	}
 
 	//$bould=get_boulder($postdata["sector"],$postdata["boulder"]);
-	//vd($attempt);
+	//i::vd($attempt);
 	//die;
 	//$attempt->boulder_letter=1;
 	//die;
@@ -93,6 +95,26 @@ if (isset($_POST["boulder"])){
 		$attempt->value=$bould["value_flash"];
 	}
 
+	$checkdup_group=$attempt->athlete_group;
+	//echo $checkdup_group;
+	if ($attempt->ascent==1 or $attempt->ascent==2){
+		$checkdupx = new db("attempts","filter:athlete_group='$checkdup_group' and boulder='$checkdup_boulder' and ascent!='0' and sector='$checkdup_sector'");
+		// /var_dump(count((array)$checkdupx)); 
+		if(count((array)$checkdupx)==2){
+		//var_dump(count((array)$checkdupx));
+		//die;
+		//if (!isset($checkdupx->{0}->id)){
+			$attempt->bonus=$bould["value_top"];
+			echo _("<b>3 TOPS</b>: registered! :)))))");
+		}
+	}
+
+	//die;
+	//unset($attempt->group);
+	//i::vd($attempt);
+	//$attempt->save();
+	//die;
+
 	if($attempt->save()){
 		//echo "<b>Done</b>! added to queue...";
 	} else{
@@ -100,13 +122,15 @@ if (isset($_POST["boulder"])){
 		die;
 	}
 
+	//die;
+
 	//header("Refresh:0");
 	//echo"aaaa";
 	echo _("<b>Done</b>: registered! :)");
 
 	//header("Location: $homeurl"."/#attempt");
 	//
-
+	//die;
 	echo'
 	<script>
 		window.location.replace("/#attempt");

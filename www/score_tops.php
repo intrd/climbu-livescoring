@@ -21,10 +21,15 @@ use database\dbintrd as db;
 use climbu\engine as cu;
 
 $qtdy=$_REQUEST["qty"];
+$atts=$_REQUEST["atts"];
 ?>
         <?php 
             //$sec=$userdata->sector;
-            $tops = new db("attempts","filter:(ascent='1' or ascent='2') ORDER BY id DESC limit $qtdy;"); 
+            if ($atts==0){
+              $tops = new db("attempts","filter:(ascent='1' or ascent='2') ORDER BY id DESC limit $qtdy;"); 
+            }else{
+              $tops = new db("attempts","filter:(ascent>='0') ORDER BY id DESC limit $qtdy;");  
+            }
             $boulders=cu::get_sectordata();
             $boulders=$boulders["boulders"];
             //vd($boulders);
@@ -35,32 +40,42 @@ $qtdy=$_REQUEST["qty"];
             </div>
                     <div class="table-responsive" style="font-size:10px;">
                         <table class="table table-bordered">
-                          <th><?php echo _("Athlete"); ?></th>
+                          <th><?php echo _("#"); ?></th>
+                          <th><?php echo _("Group"); ?></th>
                           <th><?php echo _("Boulder"); ?></th>
-                          <th><?php echo _("Sector"); ?></th>
-                          <th><?php echo _("Top or Flash"); ?></th>
-                          <th><?php echo _("Referee"); ?></th>
+                          <th><?php echo _("Sec"); ?></th>
+                          <th><?php echo _("T/F"); ?></th>
+                          <th><?php echo _("Ref."); ?></th>
                           <th><?php echo _("Value"); ?></th>
+                          <th><?php echo _("Bn"); ?></th>
+                          <th><?php echo _("Time"); ?></th>
                         <?php
                           if(isset($col)) unset($col); 
                           foreach ($tops as $top){
                             //echo $top->boulder;
                             $boulder=$boulders[($top->boulder-1)];
                             $sector=$top->sector;
+                            $group=$top->athlete_group;
+                            $datetime=$top->datetime;
+                            $bonus=$top->bonus;
                             //vd($boulder);
                             $col=$boulder["color"];
                             $val=$top->value;
                             //var_dump($top);
                             if ($top->ascent==1) { $asc="Top"; } 
                             if ($top->ascent==2) { $asc="Flash"; } 
+                            if ($top->ascent==0) { $asc="Attempt"; } 
                           ?>
                           <tr>
-                            <td><?php echo $top->athlete; ?></td>
-                            <td style='background-color: <?php echo $col;?>'><?php echo strtoupper($top->boulder_letter); ?></td>
+                            <td style='background-color:<?php if ($top->bonus>1) { echo"grey";}?>'><?php echo $top->athlete; ?></td>
+                            <td><?php echo $group; ?></td>
+                            <td style='background-color: <?php echo $col;?>'><?php echo strtoupper($top->boulder_letter); ?></td>      
                             <td><?php echo $sector; ?></td>
-                            <td><?php echo $asc; ?></td>
+                            <td style='background-color:<?php if ($val==0) { echo"white";}?>'><?php echo $asc; ?></td>
                             <td><?php echo $top->user; ?></td>
-                            <td>+<?php echo $val; ?></td>
+                            <td><?php echo $val; ?></td>
+                            <td><?php echo $bonus; ?></td>
+                            <td><?php echo $datetime; ?></td>
                           </tr>
                         <?php } ?>
                         </table>

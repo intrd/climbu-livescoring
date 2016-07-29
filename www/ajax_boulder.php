@@ -77,7 +77,7 @@ $boulderdata=$sectordata["boulders"];
 	<form name="neworder" id="neworder">
 		
 		<h5 class="media-heading"><?php echo _("Referee"); ?>: <?php echo $usu->username; ?></h5>
-		<h5 class="media-heading"><?php echo _("Athlete"); ?>: <?php echo ucfirst($athlete->name);?> (#<?php echo ucfirst($athlete->id);?>)</h5>
+		<h5 class="media-heading"><?php echo _("Athlete"); ?>: <?php echo ucfirst($athlete->name);?> (#<?php echo ucfirst($athlete->id);?>) - <?php echo ucfirst($athlete->group);?></h5>
 
 		<div class="btn-group" style="width:100%;" data-toggle="buttons">
 		  <?php
@@ -116,6 +116,7 @@ $boulderdata=$sectordata["boulders"];
 		<?php echo _("Date/time"); ?>: <?php echo date('d/m/Y h:i:s');?>
 
 		<input type="hidden" name="athlete" value="<?php echo $athlete->name; ?>">
+		<input type="hidden" name="athlete_group" value="<?php echo $athlete->group; ?>">
 		<input type="hidden" name="datetime" value="<?php echo date('Y-m-d h:i:s'); ?>">
 		<br>
 		<div class="result"></div>

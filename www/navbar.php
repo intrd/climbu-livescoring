@@ -80,7 +80,7 @@ if (($levels)>=1){
             <a id="aattempt" href="#attempt" data-toggle="tab" data-tab-always-refresh="true" data-tab-url="attempt.php" <?php echo $hidden; ?> ><i class="fa fa-check-square-o fa-fw fa-lg"></i> <?php echo _("register"); ?></a>
         </li>
         <li>
-            <a href="#score" data-toggle="tab" data-tab-url="score.php" data-tab-always-refresh="true" style="display: block;"><i class="fa fa-pie-chart"></i> <?php echo _("score"); ?></a>
+            <a href="#score" data-toggle="tab" data-tab-url="score.php?ty=groups" data-tab-always-refresh="true" style="display: block;"><i class="fa fa-pie-chart"></i> <?php echo _("score"); ?></a>
         </li>
         <li <?php echo $hidden; ?>>
             <a href="#tops" data-toggle="tab" data-tab-url="tops.php" data-tab-always-refresh="true" style="display: block;"><i class="fa fa-level-up"></i> <?php echo _("tops"); ?></a>
@@ -90,9 +90,5 @@ if (($levels)>=1){
         </li>
         
     </ul>
-    <ul id="nav3" class="nav navbar-nav navbar-right" >
-        <li>
-            
-        </li>
-    </ul>
+
 </div>

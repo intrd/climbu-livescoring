@@ -71,6 +71,7 @@ if (isset($_SESSION["userdata"])){
                     <thead> 
                         <tr style="display: table-row;"> 
                             <th>#<?php echo $gender->name;?></th>  
+                            <th><?php echo _("Group"); ?></th> 
                             <th><?php echo _("Athlete"); ?></th>     
                             <th><?php echo _("Choose"); ?></th>                                         
                         </tr>                     
@@ -94,9 +95,11 @@ if (isset($_SESSION["userdata"])){
                                 //$prod=product_nameformat($product->name);
                                 $athlet_id=$athlet->id;
                                 $athlet_name=$athlet->name;
+                                $athlet_group=$athlet->group;
                                 echo'
                                         <tr style="display: table-row;"> 
                                             <td>'.$athlet_id.'</td>  
+                                            <td>'.$athlet_group.'</td>    
                                             <td>'.$athlet_name.'</td>                           
                                             <td>
                                                 '.$active_icon.'

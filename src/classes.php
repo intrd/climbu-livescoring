@@ -68,11 +68,11 @@ class engine {
 		//SELECT * FROM ".DBIntrd::$table." WHERE ".$filter
 		if($category=="all"){
 			$athletes = new db("athletes","custom:
-				SELECT athletes.name,athletes.id,athletes.category,athletes.gender FROM athletes WHERE active=1
+				SELECT * FROM athletes WHERE active=1
 				",false);
 		}else{
 			$athletes = new db("athletes","custom:
-				SELECT athletes.name,athletes.id,athletes.category,athletes.gender FROM athletes WHERE active=1 and category='$category'
+				SELECT * FROM athletes WHERE active=1 and category='$category'
 				",false);
 		}
 
@@ -97,6 +97,7 @@ class engine {
 			$score[$athlete_name]["id"]=$athlete_id;
 			$score[$athlete_name]["category"]=$athlete_cat;
 			$score[$athlete_name]["gender"]=$athlete->gender;
+			$score[$athlete_name]["group"]=$athlete->group;
 			//vd($athelete_name);
 			//die;
 			$attempts = new db("attempts","filter:athlete='$athlete_name' and ascent=0",false);
@@ -133,6 +134,97 @@ class engine {
 				//var_dump($sumx);
 				$score[$athlete_name]["total"]=array_sum($sumx);
 			}
+			
+		}
+
+		i::array_sort_by_column($score,"total",SORT_DESC);
+
+
+		//vd($score);
+		//die;
+		//}
+		$score = array_slice($score, $start, $qty);
+
+		return $score;
+	}
+
+	public function get_rank_group($category,$start=false,$qty=false){
+		global $limit_sumrank;
+		//$athletes = new data("athletes","filter:category='$category' and active='1'",false);
+		//SELECT * FROM ".DBIntrd::$table." WHERE ".$filter
+		$groups = new db("groups","custom:
+			SELECT * FROM groups
+			",false);
+
+		$total=count((array)$groups);
+		if ($start>$total) $start = 0;
+		//echo $start;
+
+		/*$count_flash = new data("attempts","custom:
+			SELECT athlete,count(ascent) FROM attempts WHERE ascent=1 GROUP BY athlete 
+			",false);
+
+		$count_tops = new data("attempts","custom:
+				SELECT athlete,count(ascent) FROM attempts WHERE ascent=0 GROUP BY athlete 
+				",false);*/
+
+		foreach($groups as $key=>$group){
+			//i::vd($athlete);
+			//die;
+			$group_name=$group->name;
+			//echo $group_name;
+			//die;
+			$attempts = new db("attempts","filter:athlete_group='$group_name' and ascent=0",false);
+			$score[$group_name]["attempts"] = count( (array)$attempts );
+
+			$ascents = new db("attempts","filter:athlete_group='$group_name' and ascent=1",false);
+			$score[$group_name]["tops"] = count( (array)$ascents );
+			$sum=0;
+
+			$topx=array();
+			foreach($ascents as $ascent){
+				$value=engine::get_boulder($ascent->sector,$ascent->boulder)["value_top"];
+				$topx[]=$value;
+				$sum=$sum+$value;
+			}
+			$score[$group_name]["tops_sum"]=$sum;
+
+			$flashs = new db("attempts","filter:athlete_group='$group_name' and ascent=2",false);
+			$score[$group_name]["flashs"] = count( (array)$flashs );
+			$sum=0;
+			$flashx=array();
+			foreach($flashs as $flash){
+				$value=engine::get_boulder($flash->sector,$flash->boulder)["value_flash"];
+				$flashx[]=$value;
+				$sum=$sum+$value;
+			}
+			$score[$group_name]["flashs_sum"]=$sum;
+
+			$bonuses = new db("attempts","filter:athlete_group='$group_name' and ascent!=0 and bonus>0",false);
+			$score[$group_name]["bonus"] = count( (array)$bonuses );
+			$sum=0;
+			$bonusx=array();
+			foreach($bonuses as $bonus){
+				$value=$bonus->bonus;
+				$bonusx[]=$value;
+				$sum=$sum+$value;
+			}
+			$score[$group_name]["bonusx_sum"]=$sum;
+			
+
+			if ($limit_sumrank){
+				$sumx=array();
+				$sumx=array_merge($topx,$flashx);
+				arsort($sumx);
+				$sumx=array_slice($sumx,0,$limit_sumrank);
+				//var_dump($sumx);
+				$score[$athlete_name]["total"]=array_sum($sumx);
+			}else{ //ATENCAO AQUI, SÓ SOMA OS BONUS SE ESTIVER SEM O LIMITE DE 7+
+				$score[$group_name]["total"]=$score[$group_name]["flashs_sum"]+$score[$group_name]["tops_sum"]+$score[$group_name]["bonusx_sum"];
+			}
+
+			//i::vd($score);
+			//die;
 			
 		}
 

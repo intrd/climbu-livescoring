@@ -110,6 +110,7 @@ $navbar_title=$configs->{0}->value;
     <script src="assets/js/jquery.stickytabs.js"></script>
     <script>         
         $('#nav1.navbar-nav').stickyTabs();
+        //$('#nav3.navbar-nav').stickyTabs();
         
         $('body').on('hidden.bs.modal', '.modal', function () {
             $(this).removeData('bs.modal');
@@ -121,6 +122,9 @@ $navbar_title=$configs->{0}->value;
         });
 
         $( "#nav1.navbar-nav" ).click(function() {
+        	clearInterval(timer1);
+        	clearInterval(timer2);
+        	$("#superfooter").show();
         	$('#scorediv').css('color','');
         	$('#scorediv').css('background-color','');
         	$('#scorediv').css('margin-top','');
@@ -145,7 +149,7 @@ $navbar_title=$configs->{0}->value;
 
     </script>
 
-    <p style="padding:5px; background-color:#013220; color: #9D9D9D;">
+    <p id="superfooter" style="padding:5px; background-color:#013220; color: #9D9D9D;">
     	ClimbU / Open source live scoring for competitions by <a href="http://dann.com.br">intrd</a><br>
     </p>
 

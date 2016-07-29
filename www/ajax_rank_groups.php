@@ -37,17 +37,19 @@ if ($cat=="female") $catg = _("female");
                 <thead> 
                     <tr> 
                         <th>#</th>   
-                        <th></th>   
-                        <th>Catg</th>                       
+                        <th></th>                    
                         <th>Tops</th>                             
-                        <th>Flashs</th> 
-                        <th>Σ (7+)</th>                        
+                        <th>Flashs</th>
+                        <th>Σ Flashs</th> 
+                        <th>3 tops</th>
+                        <th>Σ 3 tops</th> 
+                        <th>Σ</th>                        
                     </tr>                         
                 </thead>                     
                 <tbody style="display: table-row-group;"> 
                     <?php
                     //echo $start;
-                    $score_m=cu::get_rank($cat,$start,$qty);
+                    $score_m=cu::get_rank_group($cat,$start,$qty);
                     //vd($score_m);
                     //die;
                     $pos=$start;
@@ -60,14 +62,16 @@ if ($cat=="female") $catg = _("female");
                         	$color="black";
                         }
                         $color_gender="blue";
-                        if($position["gender"]=="female") $color_gender="red"; 
+                        //if($position["gender"]=="female") $color_gender="red"; 
                         echo"
                         <tr style='background-color: $color;'> 
                             <td style=\"padding:1px;\">".$pos."</td>
-                            <td style=\"padding:1px;\">".$key."(<span style='color:$color_gender;'>".ucfirst($position["gender"][0])."</span>)</td>
-                            <td style=\"padding:1px;\">".ucfirst($position["category"])."</td>
+                            <td style=\"padding:1px;\">".$key."</span></td>
                             <td style=\"padding:1px;\">".$position["tops"]."</td>
                             <td style=\"padding:1px;\">".$position["flashs"]."</td>
+                            <td style=\"padding:1px;\">".$position["flashs_sum"]."</td>
+                            <td style=\"padding:1px;\">".$position["bonus"]."</td>
+                            <td style=\"padding:1px;\">".$position["bonusx_sum"]."</td>
                             <td style=\"padding:1px;\">".$position["total"]."</td>
                         </tr>
                         ";
