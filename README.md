@@ -142,6 +142,10 @@ $ git clone https://github.com/intrd/climbu-livescoring && cd climbu-livescoring
 
 $ composer install -o #to install
 $ composer update -o #to update
+$ mkdir climbu-livescoring/LOG
+$ touch climbu-livescoring/LOG/viewlog.html
+$ chown -R climbu:www-data climbu-livescoring/
+$ chmod -R 774 climbu-livescoring/
 
 $ ./runwww.sh #to run climbu locally, acess by browsing http://localhost (its a single thread webserver for development only)
 $ ./admindb.sh #to launch Adminer on http://localhost:8000

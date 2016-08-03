@@ -85,7 +85,7 @@ use database\dbintrd as db;
                     }
 
                     $( "#bt4" ).click(function() {
-                        event.preventDefault();
+                        //event.preventDefault();
                         $("#changenav1").hide();
                     });
 
@@ -93,7 +93,7 @@ use database\dbintrd as db;
                     var atts=0;
 
                     $( "#bt3" ).click(function() {
-                        event.preventDefault();
+                        //event.preventDefault();
                         $("#orderlist").hide();
                         clearInterval(timer1);
                         qtyy=99999;
