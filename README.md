@@ -86,7 +86,7 @@ Rotating score, you can easily adjust font size to fit at your monitor using ctr
 ![display_score](/shots/display_i.png?raw=true "display_score")
 
 Score by group..
-![display_score](/shots/display_g.png?raw=true "display_score")
+![display_score](/shots/display_g.jpg?raw=true "display_score")
 
 ## Event log, detailed, you can easily copyn'paste on a spreadsheet.
 ![sectors](/shots/display_at.jpg?raw=true "sectors")
