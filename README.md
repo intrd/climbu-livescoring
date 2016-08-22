@@ -109,34 +109,34 @@ Customizable categories to adapt to your own competition format
 # Climbu Livescoring IRL 
 ## CTF Bouldering marathon 2016 (by groups) (Vinhedo, São Paulo/Brazil)
 Testing day..
-![ctf001](/shots/ctf001.jpg?raw=true "ctf001")
+![ctf001](/shots/ctfm001.jpg?raw=true "ctf001")
 
 Climbing, markings on the wall, sectors and boulders by color, athletes by number..
-![ctf002](/shots/ctf002.jpg?raw=true "ctf002")
+![ctf002](/shots/ctfm002.jpg?raw=true "ctf002")
 
 Self-organized climbing queue..
-![ctf003](/shots/ctf003.jpg?raw=true "ctf003")
+![ctf003](/shots/ctfm003.jpg?raw=true "ctf003")
 
 ClimbU running on a single RaspberryPi 3 (it manage local wifi hotspot too)
-![ctf004](/shots/ctf004.jpg?raw=true "ctf004")
+![ctf004](/shots/ctfm004.jpg?raw=true "ctf004")
 
 Climbing ppl, another sector..
-![ctf005](/shots/ctf005.jpg?raw=true "ctf005")
+![ctf005](/shots/ctfm005.jpg?raw=true "ctf005")
 
 More climbing..
-![ctf006](/shots/ctf006.jpg?raw=true "ctf006")
+![ctf006](/shots/ctfm006.jpg?raw=true "ctf006")
 
 Self-organized climbing queue using physical tags on the wall..
-![ctf007](/shots/ctf007.jpg?raw=true "ctf007")
+![ctf007](/shots/ctfm007.jpg?raw=true "ctf007")
 
 Referee w/ smartphone..
-![ctf008](/shots/ctf008.jpg?raw=true "ctf008")
+![ctf008](/shots/ctfm008.jpg?raw=true "ctf008")
 
 Ending..
-![ctf009](/shots/ctf009.jpg?raw=true "ctf009")
+![ctf009](/shots/ctfm009.jpg?raw=true "ctf009")
 
 Final score (grouped and single)..
-![ctf010](/shots/ctf010.jpg?raw=true "ctf010")
+![ctf010](/shots/ctfm010.jpg?raw=true "ctf010")
 
 
 ## UNICAMP Campeonato Capira 2016 (Campinas, São Paulo/Brazil)
