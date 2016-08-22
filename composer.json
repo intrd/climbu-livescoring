@@ -25,10 +25,10 @@
     },
     "scripts": {
         "post-install-cmd": [
-            "wget https://www.adminer.org/latest-en.php -O dba/adminer.php"
+            "wget https://www.adminer.org/latest-en.php -O dba/adminer2.php"
         ],
         "post-update-cmd": [
-            "wget https://www.adminer.org/latest-en.php -O dba/adminer.php"
+            "wget https://www.adminer.org/latest-en.php -O dba/adminer2.php"
         ]
     },
     "extra": {

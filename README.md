@@ -83,7 +83,13 @@ Not yet created an user-friendly admin interface, you will have to setup directl
 # Screenshots & features
 ## Score display
 Rotating score, you can easily adjust font size to fit at your monitor using ctrl+mouse roll
-![display_score](/shots/display_score.jpg?raw=true "display_score")
+![display_score](/shots/display_i.png?raw=true "display_score")
+
+Score by group..
+![display_score](/shots/display_g.png?raw=true "display_score")
+
+## Event log, detailed, you can easily copyn'paste on a spreadsheet.
+![sectors](/shots/display_at.jpg?raw=true "sectors")
 
 ## Sectors & points
 ![sectors](/shots/sectors.jpg?raw=true "sectors")
@@ -101,6 +107,38 @@ Customizable categories to adapt to your own competition format
 ![register_categs](/shots/register_catgs.jpg?raw=true "register_catgs")
 
 # Climbu Livescoring IRL 
+## CTF Bouldering marathon 2016 (by groups) (Vinhedo, São Paulo/Brazil)
+Testing day..
+![ctf001](/shots/ctf001.jpg?raw=true "ctf001")
+
+Climbing, markings on the wall, sectors and boulders by color, athletes by number..
+![ctf002](/shots/ctf002.jpg?raw=true "ctf002")
+
+Self-organized climbing queue..
+![ctf003](/shots/ctf003.jpg?raw=true "ctf003")
+
+ClimbU running on a single RaspberryPi 3 (it manage local wifi hotspot too)
+![ctf004](/shots/ctf004.jpg?raw=true "ctf004")
+
+Climbing ppl, another sector..
+![ctf005](/shots/ctf005.jpg?raw=true "ctf005")
+
+More climbing..
+![ctf006](/shots/ctf006.jpg?raw=true "ctf006")
+
+Self-organized climbing queue using physical tags on the wall..
+![ctf007](/shots/ctf007.jpg?raw=true "ctf007")
+
+Referee w/ smartphone..
+![ctf008](/shots/ctf008.jpg?raw=true "ctf008")
+
+Ending..
+![ctf009](/shots/ctf009.jpg?raw=true "ctf009")
+
+Final score (grouped and single)..
+![ctf010](/shots/ctf010.jpg?raw=true "ctf010")
+
+
 ## UNICAMP Campeonato Capira 2016 (Campinas, São Paulo/Brazil)
 ![crowd1](/shots/climbin1.jpg?raw=true "climbing people")
 
