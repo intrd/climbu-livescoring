@@ -138,7 +138,20 @@ Ending..
 Final results (teams and single)..
 ![ctf010](/shots/ctfm010.jpg?raw=true "ctf010")
 
-Full event log (attempts + tops) on a spreadsheet: http://bit.ly/2bgh7Zs
+* Full event log (attempts + tops) on a spreadsheet: http://bit.ly/2bgh7Zs
+
+## Serra Master 2016 (Espirito Santo/Brazil) managed by ACE and Celina Takemura
+Referee w/ smartphone..
+![ctf001](/shots/serra1.jpg?raw=true "ctf001")
+
+Climbing, markings on the wall, sectors and boulders by color, athletes by number..
+![ctf002](/shots/serra2.jpg?raw=true "ctf002")
+
+Climbing ppl..
+![ctf003](/shots/serra3.jpg?raw=true "ctf003")
+
+ClimbU running on a Windows machine..
+![ctf004](/shots/serra4.jpg?raw=true "ctf004")
 
 
 ## UNICAMP Campeonato Capira 2016 (Campinas, São Paulo/Brazil)
